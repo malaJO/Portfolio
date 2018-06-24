@@ -73,7 +73,7 @@ spanovi.style.color = blackOpac;
 //Modals
 
 
-
+//Testiraj novi modal
 
 var modals = document.getElementsByClassName('myModall');
 console.log(modals);
