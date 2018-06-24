@@ -1,0 +1,292 @@
+/*General*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  padding: 0;
+  width: 0;
+}
+
+.container {
+  width: 90vw;
+}
+
+/*Navigation*/
+.nav {
+  background-color: #55383C;
+  width: 50px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  font-size: 9px;
+  text-align: center;
+  font-weight: Light;
+  padding: 0;
+}
+
+.navicon {
+  padding:30px 0;
+  margin: 0;
+  width: 40px;
+}
+
+.nav-text {
+ visibility: hidden;
+ padding-bottom: 2px;
+}
+
+/*Sidemenu for projects*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 40px;
+    top: -45vh;
+    min-height: 100vh;
+    background-color: #3C2427;
+    min-width: 400px;
+    z-index: -5;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation-name: slideInLeft;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+/*States of the navbar*/
+
+.nav-link.active {
+       animation-name: colourChange;
+       animation-duration: 0.4s;
+       animation-timing-function: ease-out;
+       animation-direction: alternate;
+       animation-iteration-count: 2;
+}
+
+.nav-link:hover {
+transform: scale(1.2);
+transition: all 0.2s ease-in-out;
+background-color: #3C2427;
+color: white;
+height: 100%;
+}
+
+.nav-link:hover .nav-text {
+  visibility: visible;
+  animation-name: slideInLeft;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-in;
+}
+
+.nav-link.active>.navicon {
+  transform: scale(1.2);
+  transition: all 0.6s ease-in-out;
+}
+
+
+
+
+
+/*Animating different states of the navbar*/
+
+@keyframes colourChange {
+    from {background-color: #55383C;}
+    to {background-color: white;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+  @keyframes slideInBottom {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+/*Dropright button*/
+.btn-group {
+  position: relative;
+  margin-left: 100px;
+}
+
+
+
+/*About section*/
+
+.content-elements {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/*Sky and sea - background for About section*/
+
+
+.Sky {
+  position: absolute;
+  background-color: #2F9F99;
+  height: 50%;
+  width: 100vw;
+  border-bottom: 2px solid white;
+}
+
+.Sea {
+  position: absolute;
+  background-color: #2C858D;
+  height: 50%;
+  width: 100vw;
+  top: 50%;
+}
+
+.SvgBack {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-image: url('assets/png/Buzzing.png');
+  background-repeat: repeat;
+  background-size: 800px;
+}
+
+
+@media (max-width:768px){
+  .Sky {
+    height: 75%
+  }
+  .Sea {
+    height: 25%;
+    top: 75%;
+  }
+}
+
+span {
+  background-color: rgba(255,255,255,0.2);
+  font-size: 65px;
+}
+
+/*About section*/
+h2::first-letter {
+  font-family: Lora, serif;
+  font-size: 102px;
+  font-weight: bold;
+  letter-spacing: -8px;
+  line-height: 0.4;
+}
+
+.high {
+  height: 100vh;
+  z-index: 50;
+}
+
+.pad {
+  padding-top: 50px;
+}
+
+.high:first-child {
+  margin-left: 40px;
+}
+
+
+h2 {
+  margin-top: 60px;
+}
+
+.col, .col-8 {
+}
+
+.explain {
+  position: relative;
+  z-index: 100;
+  bottom: 25vh;
+  max-width: 400px;
+}
+
+.explain > h3 {
+  font-size: 12px;
+  font-weight: Bold;
+}
+
+.explain > h3::first-letter {
+  font-family: Lora, serif;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: -4px;
+}
+
+.explain > p {
+  font-size: 10px;
+  color: white;
+  font-weight: Light;
+}
+
+.explain > p > a {
+  text-decoration: underline;
+  color: white;
+  }
+
+
+  .selectdark::selection {
+    background: #803B3E;
+  }
+
+  .selectbright::selection {
+    background: #D26167;
+  }
+
+.ProjPic img {
+  min-width: 60vw;
+}

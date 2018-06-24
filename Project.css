@@ -1,0 +1,124 @@
+/*Projects section*/
+  #Projects {
+    background-color: #238491;
+  }
+
+  /*animationg JP logo*/
+  /*animationg swing*/
+    @keyframes swing {
+     from {transform: rotate(0deg);}
+     to {transform: rotate(20deg);}
+     }
+
+
+  .SlovoJ {
+    transform-origin: 58.67% 3.169%;
+    animation-name: swing;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(.35,.01,.66,1);
+    animation-direction: alternate;
+    animation-iteration-count: 4;
+    /*animation-delay: 1s;*/
+  }
+
+
+  #Projects .ProjPic svg {
+    overflow: visible;
+    /*height: 40vh;
+    padding: 0 10vw*/
+    height: 80vh;
+    border: 1px solid green;
+  }
+
+
+/*animating svg buzzing*/
+
+.Sunshade_meaty {
+  transform-origin: 67.258% 39.47%;
+  animation-name: sunShadeRot;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-duration: alternate;
+  animation-iteration-count: infinite;
+}
+
+.Sunshade_yellow {
+  transform-origin: 29.848% 34.095%;
+  animation-name: sunShadeRotOpp;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-duration: alternate;
+  animation-iteration-count: infinite;
+}
+
+
+/*Project 1*/
+.ProjPic {
+  max-height: 80vh;
+  cursor: pointer;
+}
+
+#Project1 h2, #Project1 p {
+  background-color: rgba(230,220,220,0.9);
+  padding: 20px;
+}
+
+.SvgBack svg {
+  width: 800px;
+}
+
+.BetongBack {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-image: url('assets/jpg/Beton og Bevaring - Illustrasjon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Project4 h2, #Project4 p {
+  background-color: rgba(113,59,61,0.9);
+  /*background-color: rgba(179,179,145,0.9);*/
+  padding: 20px;
+  color: white;
+}
+
+.Walking {
+  width: 40vw;
+}
+
+.Bdent {
+  width: 40vw;
+}
+
+.GreenStreet {
+  width: 80vw;
+}
+
+#Pedestrians {
+  animation-name: zooming;
+  transform-origin: center;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-duration: alternate;
+
+}
+
+.Chart_colour {
+  animation-name: wheeling;
+  transform-origin: center;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+#Chart_colour {
+  overflow: visible;
+  width: 100%;
+}
+
+.col-auto {
+  overflow: visible;
+}
