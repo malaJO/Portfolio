@@ -72,8 +72,8 @@ spanovi.style.color = blackOpac;
 
 //Modals
 
+/*
 
-//Testiraj novi modal
 
 var modals = document.getElementsByClassName('myModall');
 console.log(modals);
@@ -104,4 +104,64 @@ for (i=0; i<modals.length; i++) {
       }
   }
 
+}*/
+
+//From w3school
+// Get the modal
+/*var modal = document.getElementById('myModal');
+console.log(modal);
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+console.log(btn);
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+console.log(span);
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}*/
+
+//Getting all modal variables
+var btn0 = document.getElementById('modalBtn1');
+var btn1 = document.getElementById('modalBtn2');
+var modall = document.getElementsByClassName('modall');
+var endingModall = document.getElementsByClassName('close');
+
+
+btn0.onclick = function() {
+  modall[0].style.display = 'block';
+}
+
+endingModall[0].onclick = function() {
+  modall[0].style.display = 'none'
+}
+
+window.onclick = function(event) {
+    if (event.target.className === 'modall') {
+        modall[0].style.display = "none";
+        modall[1].style.display = 'none'
+    }
+}
+
+btn1.onclick = function() {
+  modall[1].style.display = 'block';
+}
+
+endingModall[1].onclick = function() {
+  modall[1].style.display = 'none'
 }
