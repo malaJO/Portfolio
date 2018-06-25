@@ -139,6 +139,9 @@ window.onclick = function(event) {
 //Getting all modal variables
 var btn0 = document.getElementById('modalBtn1');
 var btn1 = document.getElementById('modalBtn2');
+var btn2 = document.getElementById('modalBtn3');
+var btn3 = document.getElementById('modalBtn4');
+var btn4 = document.getElementById('modalBtn5');
 var modall = document.getElementsByClassName('modall');
 var endingModall = document.getElementsByClassName('close');
 
@@ -152,9 +155,12 @@ endingModall[0].onclick = function() {
 }
 
 window.onclick = function(event) {
-    if (event.target.className === 'modall') {
+    if (event.target.className === 'modall' || event.target.className === 'modall modall-w') {
         modall[0].style.display = "none";
-        modall[1].style.display = 'none'
+        modall[1].style.display = 'none';
+        modall[2].style.display = 'none';
+        modall[3].style.display = 'none';
+        modall[4].style.display = 'none';
     }
 }
 
@@ -164,4 +170,28 @@ btn1.onclick = function() {
 
 endingModall[1].onclick = function() {
   modall[1].style.display = 'none'
+}
+
+btn2.onclick = function() {
+  modall[2].style.display = 'block';
+}
+
+endingModall[2].onclick = function() {
+  modall[2].style.display = 'none'
+}
+
+btn3.onclick = function() {
+  modall[3].style.display = 'block';
+}
+
+endingModall[3].onclick = function() {
+  modall[3].style.display = 'none'
+}
+
+btn4.onclick = function() {
+  modall[4].style.display = 'block';
+}
+
+endingModall[4].onclick = function() {
+  modall[4].style.display = 'none'
 }

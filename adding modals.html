@@ -73,25 +73,23 @@
                 <h2 class="pad selectbright">This is the portfolio of Jovana Pavić</h2>
                 <p class="selectbright">Architect by training, everything else by vocation.<br>
                  I'm an aspiring designer and totally in love with css animations. Even got myself to going through a java script course so I could trigger the animation exactly when I wanted it to <span>(maybe you'll notice it down the scroll..)</span>.<br>
-                 I am a spider-web thinker <span>(and proud of it)</span>, empathic in my nature and still learning to be patient. Huge digressionist <span>(missed that, didn't you)</span> I am a dedicated team-player, and really enjoy working in teams as that makes me verbalize my thoughts <span>(which seams to be much less sparkling in the air than in my head, for some reason...)</span></p>
+                 I am a spider-web thinker <span>(and proud of it)</span>, empathic in my nature and still learning to be patient. Dedicated digressionist <span>(missed that, didn't you)</span> I am a dedicated team-player, and really enjoy working in teams as that makes me verbalize my thoughts <span>(which seams to be much less sparkling in the air than in my head, for some reason...)</span></p>
             </div>
 
 
-              <div class="col-md-8 col-auto ProjPic">
+              <div class="col-md-8 col-auto ProjPic About">
                 <img src="assets/svg/BackgroundMountainsBig.svg" alt="Mountains reflecting in the fjord">
               </div>
-          </div>
-        </div>
+        </div> <!--Closes class:row-->
 
-        <div class="container">
-          <div class="row">
             <div class="col explain offset-md-8">
-                  <h3 class="selectbright">From the competition Nescafe Azera tin</h3>
+                  <h3 class="selectbright">From the competition <a class="selectdark" href="#Project1">Nescafe Azera tin</a></h3>
                   <p class="selectdark">The illustration was an entry to the competition for Nescage Azera in may 2018. The competition brief stated that the design should reflect tase of the city, and thus the fjord and mountains as the inseparable part of any Norwegian landscape. The design didn't make it to the finals, but another one did, check it our amoung the <a class="selectdark" href="#Project1">projects</a>.</p>
                 </div>
-              </div>
-            </div>
-      </div>
+
+
+            </div> <!--Closes class: container-->
+      </div> <!--//Closes content-elements-->
 
 
 <!--Projects sections-->
@@ -111,21 +109,27 @@
 
                 <!--Svg set from this point to end of div, don't change -->
               <svg class="animdemo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.81 399">
-                  <defs>
-                    <style>.cls-1{isolation:isolate;}.cls-2{fill:#ffce5f;}.cls-2,.cls-3{mix-blend-mode:multiply;}.cls-3{fill:#f69420;}
-                    </style>
-                  </defs>
-                  <title>logo JP1</title>
-                  <g class="cls-1">
-                    <g id="Logo">
-                      <path id="Slovo_P" class="cls-2" d="M87.4,139.23A87.5,87.5,0,0,0,0,226.63L1.69,383.19a15.81,15.81,0,1,0,31.61,0L47.5,226.63a39.9,39.9,0,0,1,79.8,0,23.75,23.75,0,1,0,47.5,0A87.5,87.5,0,0,0,87.4,139.23Z"/>
-                    <g id="Slovo_J">
-                      <path id="J" class="cls-3" d="M111,310.78A87.5,87.5,0,0,0,171.55,203L127.63,52.73a15.81,15.81,0,0,0-30.44,8.54l28.63,154.58A39.9,39.9,0,0,1,49,237.41,23.75,23.75,0,1,0,3.25,250.24,87.5,87.5,0,0,0,111,310.78Z"/>
-                      <circle id="Tacka-na-o" class="cls-3" cx="102.57" cy="12.65" r="12.65"/>
-                    </g>
+                <defs>
+                  <style>.cl-1{isolation:isolate;}.cl-2{fill:#FFCE5F;}.cl-2,.cl-3{mix-blend-mode:multiply;}.cl-3{fill:#f69420;}</style>
+                </defs>
+                <title>logo JP</title>
+                <g class="cl-1">
+                  <g id="Logo">
+                    <path id="Slovo_P" class="cl-2" d="M87.4,139.23A87.5,87.5,0,0,0,0,226.63L1.69,383.19a15.81,15.81,0,1,0,31.61,0L47.5,226.63a39.9,39.9,0,0,1,79.8,0,23.75,23.75,0,1,0,47.5,0A87.5,87.5,0,0,0,87.4,139.23Z"/>
+                      <g id="Slovo_J">
+                        <path id="J" class="cl-3" d="M111,310.78A87.5,87.5,0,0,0,171.55,203L127.63,52.73a15.81,15.81,0,0,0-30.44,8.54l28.63,154.58A39.9,39.9,0,0,1,49,237.41,23.75,23.75,0,1,0,3.25,250.24,87.5,87.5,0,0,0,111,310.78Z"/>
+                        <circle id="Tacka-na-o" class="cl-3" cx="102.57" cy="12.65" r="12.65"/>
+                      </g>
                     </g>
                   </g>
                 </svg>
+
+
+
+
+
+
+
             </div>
           </div>
           </div>
@@ -2661,25 +2665,17 @@
 
 
   </div>
-
-
       <div class="col-auto">
-
         <a id="modalBtn1" role="button" data-target="#modall">
           <img class="ProjPic AzeraTin" src="assets/png/Buzzing-tin.png" alt="Nescafe Azera tin with the applied illustration">
         </a>
-
-
           <!--Modal-->
           <div id="modall" class="modall">
             <div class="modall-content">
               <div class="modall-close">
               <h4 class="close">&times;</h4>
             </div>
-
-
             <!--Carousel elements-->
-
                 <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -2688,6 +2684,9 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img class="modalPic d-block w-100" src="assets/jpg/Buzzing with Tin.jpg" alt="Nescafe tin with illustration applied and with illustration as a background">
+                      <div class="carousel-caption d-none d-md-block">
+                        <!--<h5>Nescafe Azera tin with illustration applied</h5> If you want an explanation it could work like this-->
+                      </div>
                     </div>
                     <div class="carousel-item">
                       <img class="d-block w-100 modalPic" src="assets/jpg/Buzzing with brand.jpg" alt="Unwrapped tin with the illustration and brand design applied">
@@ -2711,7 +2710,7 @@
       </div>
 
 
-      <!--project 2-->
+      <!--project 2 Walking strategy Gastrategi-->
 
 <div class="content-elements" id="Project2">
   <div class="WalkingBack">
@@ -2773,7 +2772,7 @@
       </a>
 
         <!--Modal-->
-        <div id="modall" class="modall">
+        <div id="modall" class="modall modall-w">
           <div class="modall-content">
             <div class="modall-close">
             <h4 class="close">&times;</h4>
@@ -2791,19 +2790,42 @@
                   <li data-target="#carouselIndicators1" data-slide-to="1"></li>
                   <li data-target="#carouselIndicators1" data-slide-to="2"></li>
                   <li data-target="#carouselIndicators1" data-slide-to="3"></li>
+                  <li data-target="#carouselIndicators1" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="modalPic d-block w-100" src="assets/svg/Oslo modal split.svg" alt="Nescafe tin with illustration applied and with illustration as a background">
+                    <img class="modalPic d-block w-100" src="assets/svg/Oslo modal split.svg" alt="Modal split in Oslo city">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Percentage of daily trips by transport mode.</h5>
+                      <h6>Different colour pallettes were explored before the client went for the greens.</h6>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100 modalPic" src="assets/svg/Oslo time.svg" alt="Unwrapped tin with the illustration and brand design applied">
+                    <img class="d-block w-100 modalPic" src="assets/svg/Oslo time.svg" alt="Share of the trips lasting for predefined amount of time">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h6>Persentage of trips lasting for 5,10,20,30 minutes and more. For the entire city (to the left) and each part of the city separately.</h6>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="modalPic d-block w-100" src="assets/svg/Oslo walkability.svg" alt="Nescafe tin with illustration applied and with illustration as a background">
+                    <img class="modalPic d-block w-100" src="assets/svg/Oslo walkability.svg" alt="Increased walkability benefits the society">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>General Theory of Walkabilitys’ conditions for increasing walkability:</h5>
+                      <h6>simple, useful, safe, comfortable and interesting - blossoming into the benefits of increased walkability to the society - social, environmental, health and economic benefits.</h5>
+                    </div>
                   </div>
                   <div class="carousel-item">
-                    <img class="modalPic d-block w-100" src="assets/jpg/Oslo problemtree.jpg" alt="Nescafe tin with illustration applied and with illustration as a background">
+                    <img class="modalPic d-block w-100" src="assets/jpg/Oslo problemtree.jpg" alt="Problem tree for walkability in Oslo">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>The main issue identified by using problemtree technique - walking is not on the political agenda.</h5>
+                      <h6>The identified core problem in the middle, which should be addressed in order to solve the root problems.</h6>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="modalPic d-block w-100" src="assets/png/Walking strategy pages.png" alt="Pages from the report">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Pages from the Walking Strategy report</h5>
+                      <h6>The identified core problem in the middle, which should be addressed in order to solve the root problems.</h6>
+                    </div>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselIndicators1" role="button" data-slide="prev">
@@ -2818,7 +2840,7 @@
             </div>
           </div>
         </div>
-      
+
 
 
     </div> <!--Closes class:row-->
@@ -2843,13 +2865,70 @@
 
 
   <div class="col-auto">
+    <a id="modalBtn3" role="button" data-target="#modall">
       <img class="ProjPic Bdent" src="assets/svg/B-dent icons.svg" alt="Modal split in the city of Oslo">
-  </div>
-  </div>
-  </div>
-  </div>
+    </a>
 
 
+  <!--Modal-->
+  <div id="modall" class="modall">
+    <div class="modall-content">
+      <div class="modall-close">
+      <h4 class="close">&times;</h4>
+    </div>
+
+
+    <!--Carousel elements-->
+
+        <div id="carouselIndicators2" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselIndicators2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselIndicators2" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators2" data-slide-to="2"></li>
+            <li data-target="#carouselIndicators2" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="modalPic d-block w-100" src="assets/png/Styletiles B-dent-01.png" alt="Styletiles used to give the client the overall impression for the design">
+              <div class="carousel-caption d-none d-md-block">
+                <h6>Styletile discarded- client wanted something cleaner.</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 modalPic" src="assets/png/Styletiles B-dent-02.png" alt="Styletiles used to give the client the overall impression for the design">
+              <div class="carousel-caption d-none d-md-block">
+                <h6>Styletile discarded - client wanted something less childish.</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="modalPic d-block w-100" src="assets/png/Styletiles B-dent-03.png" alt="Styletiles used to give the client the overall impression for the design">
+              <div class="carousel-caption d-none d-md-block">
+                <h6>Styletile design is based upon</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="modalPic d-block w-100" src="assets/jpg/Mobile flow-b-dent.jpg" alt="Mockup flow for the mobile app">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>A prototype for an appointment scheduling web app was made and pitched to the client.</h5>
+                <h6>The client declined the idea, both because of the amount of time it would take to develop, but also because it needs a commitment to implementation a new scheduling system for the practice.</h6>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselIndicators2" role="button" data-slide="prev">
+            <div class="carousel-control-prev-icon" aria-hidden="true"></div>
+            <div class="sr-only">Previous</div>
+          </a>
+          <a class="carousel-control-next" href="#carouselIndicators2" role="button" data-slide="next">
+            <div class="carousel-control-next-icon" aria-hidden="true"></div>
+            <div class="sr-only">Next</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div> <!--Closes class:row-->
+  </div> <!--Closes class: container-->
+  </div> <!--//Closes content-elements-->
 
 
 <!--project 4-->
@@ -2870,11 +2949,22 @@
 
 
       <div class="col-auto">
+        <a id="modalBtn4" role="button" data-target="#modall">
           <img class="ProjPic" src="assets/jpg/Scan fra magasinet.jpg" alt="Illustration as printed in the Arkitekten magasine">
+        </a>
+
+          <div id="modall" class="modall">
+            <div class="modall-content">
+              <div class="modall-close">
+              <h4 class="close">&times;</h4>
+            </div>
+            <img class="modalPic d-block w-100" src="assets/jpg/Scan fra magasinet.jpg" alt="Scanned page with the illustration">
+          </div>
       </div>
       </div>
-      </div>
-      </div>
+      </div> <!--Closes class:row-->
+      </div>  <!--Closes class: container-->
+    </div> <!--//Closes content-elements-->
 
       <!--project 5-->
 
@@ -2892,11 +2982,105 @@
 
 
     <div class="col-auto">
+      <a id="modalBtn5" role="button" data-target="#modall">
         <img class="ProjPic GreenStreet" src="assets/svg/Green street elements.svg" alt="Street elements put together in a random arrangement">
+      </a>
     </div>
-    </div>
-    </div>
-    </div>
+
+    <!--Modal-->
+    <div id="modall" class="modall modall-w">
+      <div class="modall-content">
+        <div class="modall-close">
+        <h4 class="close">&times;</h4>
+      </div>
+
+
+      <!--Carousel elements-->
+
+          <div id="carouselIndicators3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselIndicators3" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselIndicators3" data-slide-to="1"></li>
+              <li data-target="#carouselIndicators3" data-slide-to="2"></li>
+              <li data-target="#carouselIndicators3" data-slide-to="3"></li>
+              <li data-target="#carouselIndicators3" data-slide-to="4"></li>
+              <li data-target="#carouselIndicators3" data-slide-to="5"></li>
+              <li data-target="#carouselIndicators3" data-slide-to="6"></li>
+              <li data-target="#carouselIndicators3" data-slide-to="7"></li>
+              <li data-target="#carouselIndicators3" data-slide-to="8"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="modalPic d-block w-100" src="assets/svg/Green street-01.svg" alt="People walking and cyclikg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>People depicted walking and cycling.</h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 modalPic" src="assets/svg/Green street-02.svg" alt="Red Oslo busses">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>Red Oslo buss - the main model used in Oslo.</h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="modalPic d-block w-100" src="assets/svg/Green street-03.svg" alt="E-buddy electric car">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>Electric car E-buddy is a common site on Oslo streets as it's produced in Norway.</h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="modalPic d-block w-100" src="assets/svg/Green street-04.svg" alt="Blue Volvo car">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>A ICE car - Volvo - produced in neighbouring Sweeden.</h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="modalPic d-block w-100" src="assets/svg/Green street-05.svg" alt="First generation Tesla">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>Tesla is also common in Norway - some 30% of the electric fleet are electric cars, and a lot of them are Teslas. </h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="modalPic d-block w-100" src="assets/svg/Green street-06.svg" alt="Typical building in old parts of Oslo">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>A typical building in Oslo.</h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="modalPic d-block w-100" src="assets/svg/Green street-07.svg" alt="Typical building in old parts of Oslo">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>A typical building in Oslo, with colour typical for the period.</h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="modalPic d-block w-100" src="assets/svg/Green street-08.svg" alt="Trams used in Oslo">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>Blue trams are of type most used in Oslo.</h6>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="modalPic d-block w-100" src="assets/svg/Green street-09.svg" alt="Typical buss stop">
+                <div class="carousel-caption d-none d-md-block">
+                  <h6>A buss stop commonly used in the city center.</h6>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators3" role="button" data-slide="prev">
+              <div class="carousel-control-prev-icon" aria-hidden="true"></div>
+              <div class="sr-only">Previous</div>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators3" role="button" data-slide="next">
+              <div class="carousel-control-next-icon" aria-hidden="true"></div>
+              <div class="sr-only">Next</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div> <!--Closes class:row-->
+    </div> <!--Closes class: container-->
+    </div> <!--//Closes content-elements-->
 
 
 

@@ -174,7 +174,7 @@ height: 100%;
   position: relative;
 }
 
-/*Sky and sea - background for About section*/
+/*Sky and sea and buzzing - background for About section and Project sections*/
 
 
 .Sky {
@@ -205,12 +205,14 @@ height: 100%;
 
 @media (max-width:768px){
   .Sky {
-    height: 75%
+    height: 76%
   }
   .Sea {
-    height: 25%;
-    top: 75%;
+    height: 24%;
+    top: 76%;
   }
+
+
 }
 
 span {
@@ -273,7 +275,7 @@ h2 {
   font-weight: Light;
 }
 
-.explain > p > a {
+.explain > p > a, .explain > h3 > a {
   text-decoration: underline;
   color: white;
   }
@@ -289,4 +291,8 @@ h2 {
 
 .ProjPic img {
   min-width: 60vw;
+}
+
+svg {
+  height: 100%;
 }
