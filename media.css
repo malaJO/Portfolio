@@ -36,7 +36,7 @@
 
     .dropdown-content {
         left: -30vw;
-        top: -45vh;
+        top: -30vh;
         min-height: 60vh;
         width: 90vw;
   }
@@ -48,6 +48,32 @@
       animation-timing-function: ease-in-out;
   }
 
+/*Adjusting due to change of the navbar position*/
+
+  .high:first-child {
+    margin-left: 0;
+  }
+
+/*Changing sizes for smaller screens*/
+  .content-elements {
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+  }
+
+  .pad {
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  body {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
   .explain p {
     display: none;
   }
@@ -55,7 +81,7 @@
   .explain {
     position: relative;
     z-index: 100;
-    bottom: 10vh;
+    top: 30vh;
     text-align: right;
   }
 

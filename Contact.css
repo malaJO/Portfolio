@@ -11,13 +11,3 @@
 #Contact a {
   color: inherit;
 }
-
-.social {
-  max-width: 64px;
-  height: 64px;
-  border: 1px solid brown;
-}
-
-.col-4 {
-  border: 2px solid red;
-}
