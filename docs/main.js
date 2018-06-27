@@ -1,16 +1,18 @@
 /*Checks if element is in view/window and plays animation if visible*/
-function playAnim(x, y, i) {
-  var anim = document.getElementsByClassName('animdemo')[i];
-  var rect = anim.getBoundingClientRect();
-  var elemTop = rect.top;
-  var elemBottom = rect.bottom;
+function playAnim(x, y) {
+  var anim = document.getElementsByClassName('animdemo')[0];
   //console.log(anim);
-  //console.log(rect);
+  var topBot = anim.getBoundingClientRect();
+  //console.log(topBot);
+  var elemTop = topBot.top;
+  var elemBottom = topBot.bottom;
+
+
 
   var isVisible = (elemTop >= 0) && (elemBottom < window.innerHeight);
   if (isVisible === true) {
     var anima = document.getElementById(x);
-    console.log(anima);
+    //console.log(anima);
     anima.classList.add(y);
     };
 }
@@ -22,16 +24,17 @@ playAnim('Slovo_J', 'SlovoJ', 0); //Plays animation is the element is in view, i
 /*Checks how log user has scrolled on Y axis and triggers animation if scrolled enough*/
 function startAnim(){
  var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+ //console.log(scrollY);
 
   if (scrollY>800 && scrollY<1400) { /*If user scrolled enough to see the top or bottom of the element that is animated, then animation starts*/
 
   var anima = document.getElementById('Slovo_J');
   anima.classList.add('SlovoJ');
-} else if (scrollY>1400 && scrollY<2700) {
+/*} else if (scrollY>1400 && scrollY<2700) {
   var anima1 = document.getElementById('Sunshade_meaty');
   anima1.classList.add('Sunshade_meaty');
   var anima2 = document.getElementById('Sunshade_yellow');
-  anima2.classList.add('Sunshade_yellow');
+  anima2.classList.add('Sunshade_yellow');*/
 } else if (scrollY>3100 && scrollY<3900) {
   var anima3 = document.getElementById('Chart_colour');
   anima3.classList.add('Chart_colour');
@@ -43,8 +46,8 @@ function startAnim(){
 window.addEventListener('scroll', startAnim); /*Checks how log user has scrolled on Y axis and triggers animation if scrolled enough*/
 
 
-playAnim('Sunshade_meaty', 'Sunshade_meaty', 1);
-playAnim('Sunshade_yellow', 'Sunshade_yellow', 1);
+//playAnim('Sunshade_meaty', 'Sunshade_meaty', 1);
+//playAnim('Sunshade_yellow', 'Sunshade_yellow', 1);
 playAnim('Chart_colour', 'Chart_colour', 2);
 
 
@@ -135,18 +138,32 @@ endingModall[4].onclick = function() {
 //Adjusting size of the icons for Contact by width-height ratio
 
 var icon = document.getElementsByClassName('social');
+var lastIcon = document.getElementById("LogoD");
 
-for (i=0; i<icon.length; i++) {
-  if (icon[i].height > icon[i].width) {
-    icon[i].style.height = '64px';
-    icon[i].style.width = 'auto';
+/*Changing icon size dependent on the screen size*/
+lastIcon.onload = function () {
+  for (i=0; i<icon.length; i++) {
+    var widTH = icon[i].width;
+    var heigHT = icon[i].height;
+    console.log(screen.width);
 
-  } else if (icon[i].width > icon[i].height){
-    icon[i].style.width = '64px';
-    icon[i].style.height = 'auto';
+    if (screen.width <= '768') {
+      if (heigHT>widTH) {
+        icon[i].style.height = '64px';
+        icon[i].style.width = 'auto';
+      } else {
+        icon[i].style.height = 'auto';
+        icon[i].style.width = '64px';
+      }
+    } else {
+      if (heigHT>widTH) {
+        icon[i].style.height = '96px';
+        icon[i].style.width = 'auto';
+      } else {
+        icon[i].style.height = 'auto';
+        icon[i].style.width = '96px';
 
-  } else {
-    icon[i].style.height = '64px';
-    icon[i].style.width = '64px';
-  }
+      }
+    }
+}
 }

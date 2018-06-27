@@ -57,9 +57,15 @@
 /*Changing sizes for smaller screens*/
   .content-elements {
     width: 100vw;
-    height: 150vh;
+    height: 200vh;
     position: relative;
+    border: 2px solid red;
   }
+
+  #Contact {
+    height: 120vh;
+  }
+
 
   .pad {
     padding: 0;
@@ -72,6 +78,13 @@
   body {
     font-size: 0.8rem;
     line-height: 1.2rem;
+  }
+
+  h2::first-letter {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 0.4;
   }
 
   .explain p {
