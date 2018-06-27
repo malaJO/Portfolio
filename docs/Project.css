@@ -63,7 +63,7 @@
 }
 
 .SvgBack svg {
-  width: 800px;
+  max-width: 800px;
   z-index: 2;
 }
 
