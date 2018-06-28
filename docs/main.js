@@ -56,6 +56,7 @@ function randomlly(array){
     return array[Math.floor(Math.random() * array.length)];
   }
 
+function textOpac () {
 var size = ['1.2rem', '0.8rem', '0.7rem', '1rem', '1.4rem']
 var font = ['Montserrat', 'Lora', 'Nunito', 'Roboto+Mono']
 
@@ -70,6 +71,46 @@ var blackOpac = 'rgba(0,0,0,' + (Math.random()+0.5) +')'
 spanovi.style.color = blackOpac;
 //console.log(blackOpac);
 }
+}
+
+
+
+
+/*Adjusting top margin for the MountainFjord illustration*/
+
+function calcHeight () {
+
+  var imgHeight = document.getElementsByClassName('AboutImg');
+  console.log(imgHeight);
+  var renderedHeight = imgHeight[0].clientHeight
+  console.log(renderedHeight);
+  var skyHeight = document.getElementsByClassName('Sky');
+  console.log(skyHeight);
+  var textHeight = document.getElementsByClassName('AboutText');
+  console.log(textHeight);
+
+if (screen.width <= '768') {
+  var textOriginal = textHeight[0].scrollHeight;
+  console.log(textOriginal);
+  var calcHeight = renderedHeight/2 - 0.5 + textOriginal;
+  console.log(calcHeight);
+  skyHeight[0].style.height = calcHeight + 'px';
+
+} else {
+var textExplain = document.getElementsByClassName('explain');
+
+var newDiv = document.createElement('div');
+
+var parentToDiv = document.getElementsByClassName('ProjPic');
+parentToDiv[0].insertBefore(newDiv, parentToDiv[0].childNodes[0]);
+newDiv.style.height = textExplain[0].clientHeight + 'px';
+}
+}
+
+textOpac();
+setTimeout (calcHeight, 500);
+
+
 
 
 //Modals
@@ -145,7 +186,7 @@ lastIcon.onload = function () {
   for (i=0; i<icon.length; i++) {
     var widTH = icon[i].width;
     var heigHT = icon[i].height;
-    console.log(screen.width);
+    //console.log(screen.width);
 
     if (screen.width <= '768') {
       if (heigHT>widTH) {

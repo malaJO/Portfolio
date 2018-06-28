@@ -171,7 +171,7 @@ height: 100%;
 
 .content-elements {
   width: 100vw;
-  height: 100vh;
+  /*height: 100vh;*/
   position: relative;
 }
 
@@ -204,19 +204,6 @@ height: 100%;
   background-size: 800px;
 }
 
-
-@media (max-width:768px){
-  .Sky {
-    height: 112.5%
-  }
-  .Sea {
-    height: 37.5%;
-    top: 112.5%;
-  }
-
-
-}
-
 span {
   background-color: rgba(255,255,255,0.2);
   font-size: 65px;
@@ -229,11 +216,6 @@ h2::first-letter {
   font-weight: bold;
   letter-spacing: -8px;
   line-height: 0.4;
-}
-
-.high {
-  height: 100vh;
-  z-index: 50;
 }
 
 .pad {
@@ -255,7 +237,7 @@ h2 {
 .explain {
   position: relative;
   z-index: 100;
-  bottom: 25vh;
+  /*bottom: 25vh;*/
   max-width: 400px;
 }
 
@@ -275,6 +257,7 @@ h2 {
   font-size: 10px;
   color: white;
   font-weight: Light;
+  margin: 0;
 }
 
 .explain > p > a, .explain > h3 > a {
@@ -285,6 +268,7 @@ h2 {
 
   .selectdark::selection {
     background: #803B3E;
+
   }
 
   .selectbright::selection {

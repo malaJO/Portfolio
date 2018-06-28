@@ -1,4 +1,10 @@
 /*Altering elements for mobile and smaller screen sizes*/
+@media (min-width:768px) {
+  .content-elements {
+    height: 100vh;
+  }
+}
+
 
 @media (max-width:768px){
   .navbar {
@@ -57,13 +63,12 @@
 /*Changing sizes for smaller screens*/
   .content-elements {
     width: 100vw;
-    height: 200vh;
+    /*height: 200vh;*/
     position: relative;
-    border: 2px solid red;
   }
 
-  #Contact {
-    height: 120vh;
+.high {
+  height: auto;
   }
 
 
@@ -94,7 +99,7 @@
   .explain {
     position: relative;
     z-index: 100;
-    top: 30vh;
+    /*top: 30vh;*/
     text-align: right;
   }
 
@@ -102,18 +107,12 @@
     max-height: 50vh;
   }
 
-.ProjPic svg {
-  max-height: 60vh;
+.AboutImg {
+  width: 100%;
 }
 
-.About {
-  height: 50vh;
-  width: 100vw;
-}
-
-.About img {
-  position: absolute;
-  top: 35%;
+#Contact {
+  height: 100vh;
 }
 
 }

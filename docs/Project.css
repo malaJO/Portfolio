@@ -1,6 +1,7 @@
 /*Projects section*/
   #Projects {
     background-color: #238491;
+
   }
 
   /*animationg JP logo*/
@@ -24,9 +25,7 @@
 
   #Projects .ProjPic svg {
     overflow: visible;
-    /*height: 40vh;
-    padding: 0 10vw*/
-    height: 80vh;
+    height: 60vh;
   }
 
 
@@ -53,7 +52,7 @@
 
 /*Project 1*/
 .ProjPic {
-  max-height: 80vh;
+  max-height: 70vh;
   cursor: pointer;
 }
 
