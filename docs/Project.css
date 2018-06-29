@@ -23,31 +23,9 @@
   }
 
 
-  #Projects .ProjPic svg {
+  #Projects .ProjPic {
     overflow: visible;
-    height: 60vh;
   }
-
-
-/*animating svg buzzing*/
-
-.Sunshade_meaty {
-  transform-origin: 67.258% 39.47%;
-  animation-name: sunShadeRot;
-  animation-duration: 8s;
-  animation-timing-function: ease-in-out;
-  animation-duration: alternate;
-  animation-iteration-count: infinite;
-}
-
-.Sunshade_yellow {
-  transform-origin: 29.848% 34.095%;
-  animation-name: sunShadeRotOpp;
-  animation-duration: 10s;
-  animation-timing-function: ease-in-out;
-  animation-duration: alternate;
-  animation-iteration-count: infinite;
-}
 
 
 /*Project 1*/

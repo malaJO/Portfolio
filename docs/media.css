@@ -41,10 +41,10 @@
   }
 
     .dropdown-content {
-        left: -30vw;
-        top: -30vh;
-        min-height: 60vh;
-        width: 90vw;
+      min-width: 80vw;
+      overflow: scroll;
+      height: 50vh;
+      padding-top: 0;
   }
 
   .dropdown:hover .dropdown-content {
@@ -63,7 +63,6 @@
 /*Changing sizes for smaller screens*/
   .content-elements {
     width: 100vw;
-    /*height: 200vh;*/
     position: relative;
   }
 
@@ -107,9 +106,9 @@
     max-height: 50vh;
   }
 
-.AboutImg {
+/*.AboutImg {
   width: 100%;
-}
+}*/
 
 #Contact {
   height: 100vh;

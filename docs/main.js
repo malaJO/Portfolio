@@ -81,19 +81,13 @@ spanovi.style.color = blackOpac;
 function calcHeight () {
 
   var imgHeight = document.getElementsByClassName('AboutImg');
-  console.log(imgHeight);
   var renderedHeight = imgHeight[0].clientHeight
-  console.log(renderedHeight);
   var skyHeight = document.getElementsByClassName('Sky');
-  console.log(skyHeight);
   var textHeight = document.getElementsByClassName('AboutText');
-  console.log(textHeight);
 
 if (screen.width <= '768') {
   var textOriginal = textHeight[0].scrollHeight;
-  console.log(textOriginal);
   var calcHeight = renderedHeight/2 - 0.5 + textOriginal;
-  console.log(calcHeight);
   skyHeight[0].style.height = calcHeight + 'px';
 
 } else {
@@ -208,3 +202,35 @@ lastIcon.onload = function () {
     }
 }
 }
+
+/*Positioning of nav meny*/
+var navTop = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().y;
+var navLeft = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().x;
+console.log(navTop);
+console.log(navLeft);
+var sideBar = document.getElementsByClassName('dropdown-content')[0];
+var winWidth = window.innerWidth;
+var winHeight = window.innerHeight;
+console.log(winWidth);
+console.log(winHeight);
+
+
+if ((screen.width <= '768') && (winWidth > winHeight)) {
+  var calcWidth = 'calc(10vw - ' + navLeft+ 'px)';
+  sideBar.style.top = '-' + navTop + 'px';
+  sideBar.style.left = calcWidth;
+} else if ((screen.width <= '768') && (winWidth < winHeight)) {
+  var calcWidth = 'calc(10vw - ' + navLeft+ 'px)';
+  sideBar.style.top = '-' + navTop/2 + 'px';
+  sideBar.style.left = calcWidth;
+} else {
+  var calcWidth = 'calc(-' + navTop + 'px - 10px)';
+  console.log(calcWidth);
+  sideBar.style.top = calcWidth;
+}
+
+window.onclick = function(event) {
+    if (event.target.className === 'dropdown-content') {
+    sideBar.style.display = 'none';
+    }
+  }

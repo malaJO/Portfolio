@@ -1,13 +1,12 @@
 /*Contact section*/
-
-  #Contact {
-    background-color: #DC7B6E;
-  }
-
-.Jovana {
-  width: 20vw;
+#Contact {
+  background-color: #DC7B6E;
 }
 
 #Contact a {
   color: inherit;
+}
+
+.social {
+  margin-bottom: 60px;
 }
