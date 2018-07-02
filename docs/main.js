@@ -163,19 +163,18 @@ btn0.onclick = function() {
   modall[0].style.display = 'block';
 }
 
-endingModall[0].onclick = function() {
-  modall[0].style.display = 'none'
+
+document.onclick = function(event) {
+
+  if (event.target.id === 'modall') {
+    modall[0].style.display = 'none';
+    modall[1].style.display = 'none';
+    modall[2].style.display = 'none';
+    modall[3].style.display = 'none';
+    modall[4].style.display = 'none';
+  }
 }
 
-window.onclick = function(event) {
-    if (event.target.className === 'modall' || event.target.className === 'modall modall-w') {
-        modall[0].style.display = "none";
-        modall[1].style.display = 'none';
-        modall[2].style.display = 'none';
-        modall[3].style.display = 'none';
-        modall[4].style.display = 'none';
-    }
-}
 
 btn1.onclick = function() {
   modall[1].style.display = 'block';
@@ -275,7 +274,6 @@ window.onclick = function(event) {
 /*Button for dripdown content - we'll have to add a class to button .dropdown-clicked*/
 var dropdownButton = document.getElementById('dropdownButton');
 var dropContent = document.getElementsByClassName('dropdown-content');
-console.log(dropContent);
 
 
 

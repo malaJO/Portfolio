@@ -122,4 +122,11 @@
   height: 100vh;
 }
 
+/*Modal text not showing when small screen*/
+.modalText-w h6, .modalText h6, .modalText-w h5, .modalText h5 {
+  font-size: 0.8rem;
 }
+
+
+
+} /*Closes entire media query*/

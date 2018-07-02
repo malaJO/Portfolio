@@ -17,8 +17,9 @@
 }
 
 .modall-w {
-  background-color: rgba(255,255,255,0.8); /* Black w/ opacity */
+  background-color: rgba(225,225,225,0.85); /* Black w/ opacity */
 }
+
 
 /* Modal Content/Box */
 .modall-content {
@@ -34,14 +35,14 @@
     float: right;
     font-size: 2rem;
     font-weight: bold;
-    color: rgba(230,220,220,1);
+color: #FFCE5F;
     z-index: 5;
     height: 2rem;
 }
 
 .close:hover,
 .close:focus {
-    color: white;
+    color: #231F20;
     text-decoration: none;
     cursor: pointer;
 }
@@ -51,8 +52,25 @@
   height: 2.2rem;
 }
 
-.carousel-caption > h5, h6 {
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#231F20' stroke-width='0.2' fill='#FFCE5F' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#231F20' stroke-width='0.2' fill='#FFCE5F' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/*Styling modal Text content*/
+.modalText-w, .modalText {
   color: #231F20;
-  padding: 2px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,206,95,0.95);
+  min-height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: center;
+
 }
