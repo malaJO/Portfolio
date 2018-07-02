@@ -1,3 +1,8 @@
+/*Checks screen width*/
+var testScreen = screen.width;
+var winWidth = window.innerWidth;
+
+
 /*Checks if element is in view/window and plays animation if visible*/
 function playAnim(x, y) {
   var anim = document.getElementsByClassName('animdemo')[0];
@@ -81,28 +86,63 @@ spanovi.style.color = blackOpac;
 function calcHeight () {
 
   var imgHeight = document.getElementsByClassName('AboutImg');
-  var renderedHeight = imgHeight[0].clientHeight
+  var renderedHeight = imgHeight[0].clientHeight;
   var skyHeight = document.getElementsByClassName('Sky');
   var textHeight = document.getElementsByClassName('AboutText');
+  var textBoxes = document.getElementsByClassName('selectbright');
+  var headingHeight = textBoxes[1];
 
-if (screen.width <= '768') {
+
+
+
+if ((testScreen < '768') || (winWidth < '768')) {
   var textOriginal = textHeight[0].scrollHeight;
+
   var calcHeight = renderedHeight/2 - 0.5 + textOriginal;
   skyHeight[0].style.height = calcHeight + 'px';
 
 } else {
-var textExplain = document.getElementsByClassName('explain');
 
+var textExplain = document.getElementsByClassName('explain');
+var newDiv = document.createElement('div');
+var parentToDiv = document.getElementsByClassName('ProjPic');
+parentToDiv[0].insertBefore(newDiv, parentToDiv[0].childNodes[0]);
+newDiv.style.height = textExplain[0].clientHeight + 'px';
+parentToDiv[0].style.paddingTop = '2.4rem';
+
+var textPosition = headingHeight.getBoundingClientRect();
+textBoxes[0].style.height = textPosition.height + 'px';
+textBoxes[0].style.paddingTop = textBoxes[0].getBoundingClientRect().height/1.8 + 'px';
+
+
+/*var calculatedTop = 'calc(' + window.innerHeight/2 + 'px - ' + textPosition.top + 'px)';
+console.log(window.innerHeight);
+console.log(textPosition.height);
+console.log(textPosition.y);
+textBoxes[0].style.bottom = '50vh';
+//textBoxes[1].style.marginBottom = calculatedTop;
+console.log(calculatedTop);
+console.log(headingHeight);
+
+var textExplain = document.getElementsByClassName('explain');
+console.log('Else');
 var newDiv = document.createElement('div');
 
 var parentToDiv = document.getElementsByClassName('ProjPic');
 parentToDiv[0].insertBefore(newDiv, parentToDiv[0].childNodes[0]);
-newDiv.style.height = textExplain[0].clientHeight + 'px';
+console.log(imgHeight);
+var headingHeightCalc = 'calc(50vh - ' + headingHeight + 'px)';
+textBoxes[0].style.marginTop = headingHeightCalc; //adjusting heigt of the text about me
+var newDivHeight = 'calc(' + headingHeight + 'px + ' + textExplain[0].clientHeight + 'px)';
+console.log(newDivHeight);
+newDiv.style.height = newDivHeight;
+console.log(textExplain[0].clientHeight);*/
+
 }
 }
 
 textOpac();
-setTimeout (calcHeight, 500);
+setTimeout (calcHeight, 300);
 
 
 
@@ -182,7 +222,7 @@ lastIcon.onload = function () {
     var heigHT = icon[i].height;
     //console.log(screen.width);
 
-    if (screen.width <= '768') {
+    if ((testScreen < '768') || (winWidth < '768')) {
       if (heigHT>widTH) {
         icon[i].style.height = '64px';
         icon[i].style.width = 'auto';
@@ -206,26 +246,22 @@ lastIcon.onload = function () {
 /*Positioning of nav meny*/
 var navTop = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().y;
 var navLeft = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().x;
-console.log(navTop);
-console.log(navLeft);
 var sideBar = document.getElementsByClassName('dropdown-content')[0];
-var winWidth = window.innerWidth;
 var winHeight = window.innerHeight;
-console.log(winWidth);
-console.log(winHeight);
 
 
-if ((screen.width <= '768') && (winWidth > winHeight)) {
+
+if ((screen.width < '768') && (winWidth > winHeight)) {
   var calcWidth = 'calc(10vw - ' + navLeft+ 'px)';
   sideBar.style.top = '-' + navTop + 'px';
   sideBar.style.left = calcWidth;
-} else if ((screen.width <= '768') && (winWidth < winHeight)) {
+} else if ((screen.width < '768') && (winWidth < winHeight)) {
   var calcWidth = 'calc(10vw - ' + navLeft+ 'px)';
   sideBar.style.top = '-' + navTop/2 + 'px';
   sideBar.style.left = calcWidth;
 } else {
   var calcWidth = 'calc(-' + navTop + 'px - 10px)';
-  console.log(calcWidth);
+
   sideBar.style.top = calcWidth;
 }
 
@@ -234,3 +270,29 @@ window.onclick = function(event) {
     sideBar.style.display = 'none';
     }
   }
+
+
+/*Button for dripdown content - we'll have to add a class to button .dropdown-clicked*/
+var dropdownButton = document.getElementById('dropdownButton');
+var dropContent = document.getElementsByClassName('dropdown-content');
+console.log(dropContent);
+
+
+
+function displaying() {
+  var disp = dropContent[0].style.display;
+  if (disp != "block") {
+    dropContent[0].style.display = 'block';
+    dropContent[0].classList.remove('dropdown-clicked');
+
+  } else {
+    function setDisplayNone () {
+      dropContent[0].style.display = 'none';
+    }
+    dropContent[0].classList.add('dropdown-clicked');
+    setTimeout(setDisplayNone, 600);
+  }
+
+}
+
+dropdownButton.addEventListener('click', displaying);

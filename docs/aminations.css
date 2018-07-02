@@ -49,6 +49,15 @@
     }
 }
 
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /*animationg swing*/
   @keyframes swing {
    from {transform: rotate(0deg);}
