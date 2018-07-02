@@ -210,12 +210,11 @@ height: 100%;
   border-bottom: 2px solid white;
 }
 
-.Sea {
-  position: absolute;
+
+
+#About {
   background-color: #2C858D;
-  height: 50vh;
-  width: 100vw;
-  top: 50%;
+  height: 100%;
 }
 
 .SvgBack {
