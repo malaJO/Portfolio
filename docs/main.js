@@ -279,16 +279,21 @@ var dropContent = document.getElementsByClassName('dropdown-content');
 
 function displaying() {
   var disp = dropContent[0].style.display;
+  console.log(dropContent[0].style.display);
   if (disp != "block") {
+    console.log('if');
     dropContent[0].style.display = 'block';
     dropContent[0].classList.remove('dropdown-clicked');
+    console.log(dropContent[0]);
 
   } else {
+    console.log('else');
     function setDisplayNone () {
       dropContent[0].style.display = 'none';
     }
     dropContent[0].classList.add('dropdown-clicked');
-    setTimeout(setDisplayNone, 600);
+    setTimeout(setDisplayNone, 2000);
+    console.log(dropContent[0]);
   }
 
 }

@@ -55,11 +55,10 @@
       animation-iteration-count: 1;
   }
 
-.dropdown-clicked {
-  animation-name: disappear;
-  animation-duration: 0.6s;
-  transition:
-}
+  .dropdown-clicked {
+    animation-name: disappear;
+    animation-duration: 0.6s;
+  }
 
 
 /*Adjusting due to change of the navbar position*/
