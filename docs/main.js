@@ -250,11 +250,11 @@ var winHeight = window.innerHeight;
 
 
 
-if ((screen.width < '768') && (winWidth > winHeight)) {
+if ((testScreen < '768' || winWidth < '768') && winWidth > winHeight) {
   var calcWidth = 'calc(10vw - ' + navLeft+ 'px)';
   sideBar.style.top = '-' + navTop + 'px';
   sideBar.style.left = calcWidth;
-} else if ((screen.width < '768') && (winWidth < winHeight)) {
+} else if ((testScreen < '768' || winWidth < '768') && winWidth < winHeight) {
   var calcWidth = 'calc(10vw - ' + navLeft+ 'px)';
   sideBar.style.top = '-' + navTop/2 + 'px';
   sideBar.style.left = calcWidth;
@@ -292,7 +292,7 @@ function displaying() {
       dropContent[0].style.display = 'none';
     }
     dropContent[0].classList.add('dropdown-clicked');
-    setTimeout(setDisplayNone, 2000);
+    setTimeout(setDisplayNone, 100);
     console.log(dropContent[0]);
   }
 

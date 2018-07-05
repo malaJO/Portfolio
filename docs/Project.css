@@ -45,12 +45,23 @@
   z-index: 2;
 }
 
+/*Project2*/
+#Project2  .SvgBack {
+  background-image: url('assets/png/SkillShare_background.png');
+  background-repeat: repeat;
+  background-size: 600px;
+}
+
+#modalBtn2 .ProjPic {
+  max-width: 40vw;
+}
+
 .BetongBack {
   position: absolute;
   height: 100%;
   width: 100vw;
   background-image: url('assets/jpg/Beton-og-Bevaring-Illustrasjon_S.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 

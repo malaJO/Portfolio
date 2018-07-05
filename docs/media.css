@@ -1,6 +1,6 @@
 /*Altering elements for mobile and smaller screen sizes*/
 @media (min-width:768px) {
-  .content-elements, .row {
+  .row {
     min-height: 100vh;
   }
 }
