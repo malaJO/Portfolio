@@ -9,41 +9,111 @@ body {
 
 .navbar {
   padding: 0;
-  width: 0;
+
 }
 
 .container {
   width: 90vw;
+  margin-left: 18rem;
 }
 
 /*Navigation*/
 .nav {
-  background-color: #55383C;
-  width: 50px;
+  background-color: white;
+  width: 18rem;
   height: 100vh;
-  margin: 0;
-  padding: 0;
+  overflow-y:scroll;
 }
 
 .nav-link {
-  color: white;
-  font-size: 9px;
-  text-align: center;
-  font-weight: Light;
+  margin: 0;
   padding: 0;
 }
 
 .navicon {
-  padding:30px 0;
+  padding:2rem 0.4rem;
   margin: 0;
-  width: 40px;
+  width: 2.4rem;
+}
+
+.abouticon {
+  width: 114px;
+  padding-top: 14vh;
+  padding-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.TextNav {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.ProjectsSec a {
+  color: black;
+}
+
+.ProjectsSec {
+  margin-top: 6vh;
+
+}
+
+.DescriptText {
+  text-align: center;
+}
+
+.TextAbout {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 15rem;
+}
+
+.col-12 {
+padding: 6px 0;
+
+
 }
 
 .nav-text {
- visibility: hidden;
+ /*visibility: hidden;*/
  padding-bottom: 2px;
 }
 
+.LinkToProj {
+  height: 60px;
+
+}
+
+.projicon {
+  width: 58px;
+  vertical-align: top;
+}
+
+.projtext {
+  display: inline-block;
+  font-size: 0.8rem;
+  width: 72%;
+  text-align: left;
+  padding-left: 4px;
+  line-height: 60px;
+
+}
+
+.KeepInTouch {
+  display: inline-block;
+  cursor: pointer;
+
+}
 /*Sidemenu for projects*/
 
 .dropdown-content {
@@ -95,7 +165,7 @@ body {
 
 /*States of the navbar*/
 
-.nav-link.active {
+/*.nav-link.active {
        animation-name: colourChange;
        animation-duration: 0.4s;
        animation-timing-function: ease-out;
@@ -123,7 +193,7 @@ height: 100%;
   transition: all 0.6s ease-in-out;
 }
 
-
+*/
 
 
 
