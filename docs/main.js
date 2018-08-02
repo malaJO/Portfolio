@@ -62,7 +62,7 @@ function randomlly(array){
   }
 
 function textOpac () {
-var size = ['1.2rem', '0.8rem', '0.7rem', '1rem', '1.4rem']
+var size = ['1.2rem', '0.8rem', '1.1rem', '1rem', '0.9rem']
 var font = ['Montserrat', 'Lora', 'Nunito', 'Roboto+Mono']
 
 var spans = document.getElementsByTagName('span');
@@ -88,7 +88,7 @@ function calcHeight () {
   var imgHeight = document.getElementsByClassName('AboutImg');
   var renderedHeight = imgHeight[0].clientHeight;
   var skyHeight = document.getElementsByClassName('Sky');
-  var textHeight = document.getElementsByClassName('AboutText');
+  //var textHeight = document.getElementsByClassName('AboutText');
   var textBoxes = document.getElementsByClassName('selectbright');
   var headingHeight = textBoxes[1];
 
@@ -96,7 +96,7 @@ function calcHeight () {
 
 
 if ((testScreen < '768') || (winWidth < '768')) {
-  var textOriginal = textHeight[0].scrollHeight;
+  //var textOriginal = textHeight[0].scrollHeight;
 
   var calcHeight = renderedHeight/2 - 0.5 + textOriginal;
   skyHeight[0].style.height = calcHeight + 'px';
@@ -112,7 +112,7 @@ parentToDiv[0].style.paddingTop = '2.4rem';
 
 var textPosition = headingHeight.getBoundingClientRect();
 textBoxes[0].style.height = textPosition.height + 'px';
-textBoxes[0].style.paddingTop = textBoxes[0].getBoundingClientRect().height/1.8 + 'px';
+//textBoxes[0].style.paddingTop = textBoxes[0].getBoundingClientRect().height/1.8 + 'px';
 
 
 /*var calculatedTop = 'calc(' + window.innerHeight/2 + 'px - ' + textPosition.top + 'px)';
@@ -155,6 +155,7 @@ var btn1 = document.getElementById('modalBtn2');
 var btn2 = document.getElementById('modalBtn3');
 var btn3 = document.getElementById('modalBtn4');
 var btn4 = document.getElementById('modalBtn5');
+var btn5 = document.getElementById('modalBtn6');
 var modall = document.getElementsByClassName('modall');
 var endingModall = document.getElementsByClassName('close');
 
@@ -172,6 +173,7 @@ document.onclick = function(event) {
     modall[2].style.display = 'none';
     modall[3].style.display = 'none';
     modall[4].style.display = 'none';
+    modall[5].style.display = 'none';
   }
 }
 
@@ -206,6 +208,14 @@ btn4.onclick = function() {
 
 endingModall[4].onclick = function() {
   modall[4].style.display = 'none'
+}
+
+btn5.onclick = function() {
+  modall[5].style.display = 'block';
+}
+
+endingModall[5].onclick = function() {
+  modall[5].style.display = 'none'
 }
 
 

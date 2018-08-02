@@ -3,12 +3,16 @@
   .content-elements, .row {
     min-height: 100vh;
   }
+
+  .BDent > .row {
+    min-height: auto;
+  }
 }
 
 
 @media (max-width:768px){
-  .container {
-    margin: 0;
+  .content-elements {
+    margin-left: 0;
   }
 
   .navbar {
@@ -122,6 +126,9 @@ margin-right: auto;
 }
 
 
+.Sky {
+  width: 100vw;
+}
 
 
 .ContactSec {

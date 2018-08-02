@@ -136,33 +136,30 @@
 
 <!--About section-->
 
-      <div class="content-element" id="About">
-        <div class="ColourBack">
-          <!--<div class="ColourBack Sea"></div>-->
-          <div class="ColourBack Sky"></div>
+      <div class="content-elements ColourBack" id="About">
+        <div class="ColourBack Sky"></div>
 
-        </div>
-
-        <div class="container h-100 col-sm-10 col-md-10 col-lg-auto col-xl-auto">
-          <div class="row h-100 align-items-center no-gutters">
-            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 AboutText">
-                <h2 class="pad selectbright">This is the portfolio of Jovana Pavić</h2>
-
+        <div class="container h-100">
+          <div class="row h-100 align-items-center no-gutters justify-content-around">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 AboutText">
+                <h2 class="pad selectbright">Welcome to Jovana's portfolio page</h2>
                 <p class="selectbright twoColumnText">Architect by training, everything else by vocation.<br>
-                 I'm an aspiring designer and totally in love with css animations. Even got myself to going through a java script course so I could trigger the animation exactly when I wanted it to <span>(maybe you'll notice it down the scroll..)</span>.<br>
+                 I'm an aspiring designer and totally in love with css animations <span>(maybe you'll notice it down the scroll..)</span>.<br>
                  I am a spider-web thinker <span>(and proud of it)</span>, empathic in my nature and still learning to be patient. Dedicated digressionist <span>(missed that, didn't you)</span> I am a dedicated team-player, and really enjoy working in teams as that makes me verbalize my thoughts <span>(which seams to be much less sparkling in the air than in my head, for some reason...)</span></p>
 
             </div>
 
 
 
-              <div class="ProjPic col-sm-10 col-md-10 col-lg-6 col-xl-6">
-                <a class="selectdark" href="#Project1"><img class="AboutImg" src="assets/svg/BackgroundMountainsBig.svg" alt="Mountains reflecting in the fjord"></a>
+              <div class="ProjPic col-auto ">
+                <a class="selectdark" href="#Project1">
+                  <img class="AboutImg" src="assets/svg/BackgroundMountains.svg" alt="Mountains reflecting in the fjord">
+                </a>
 
 
 
 
-            <div class="col explain offset-md-4 align-self-end">
+            <div class="col explain align-self-end">
                   <h3 class="selectbright">From the competition <a class="selectdark" href="#Project1">Nescafe Azera tin</a></h3>
                   <p class="selectdark">The illustration was an entry to the competition for Nescage Azera in may 2018. The competition brief stated that the design should reflect tase of the city, and thus the fjord and mountains as the inseparable part of any Norwegian landscape. The design didn't make it to the finals, but another one did, check it our amoung the <a class="selectdark" href="#Project1">projects</a>.</p>
                 </div>
@@ -210,9 +207,7 @@
 
   <!--Nescafe Azera - Project1-->
 
-  <div class="content-elements" id="Project1">
-    <div class="SvgBack">
-    </div>
+  <div class="content-elements SvgBack" id="Project1">
 
 <div class="container h-100">
   <div class="row h-100 align-items-center no-gutters justify-content-around">
@@ -552,12 +547,11 @@
 
     <!--project 4-->
 
-<div class="content-elements" id="Project4">
-<div class="B-dentBack">
-</div>
+<div class="content-elements B-dentBack" id="Project4">
+
 
 <div class="container h-100">
-<div class="row h-100 align-items-center justify-content-around no-gutters">
+<div class="row h-100 align-items-center justify-content-around ">
 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
   <h2>Web & graphic design for “B-dent” dentist practice</h2>
   <p class="twoColumnText">The client wanted to assert their pressence on the web, and thus needed a web page. Beeing a new dental practice, the client didn’t have visuals, brand or logo developed, and this turned out to be an important aspect of the work.<br>
@@ -565,15 +559,18 @@
 </div>
 
 
-  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-    <a id="modalBtn4" role="button" data-target="#modall">
-      <img class="ProjPic Bdent"
-           srcset = "assets/png/B-dent_S.png 459w,
-                     assets/svg/B-dent-icons.svg 917w"
-           sizes = "(max-width: 120em) 50vh,
-                    100vh"
-           src="assets/svg/B-dent-icons.svg" alt="Icons for the different dental services">
-    </a>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 BDent">
+<a id="modalBtn4" role="button" data-target="#modall" class="row h-100 align-items-center justify-content-around no-gutters">
+
+    <img class="col-sm-6 col-md-6 col-lg-5 col-xl-5 BDentIcon" src="assets/svg/B-dent_Icon1.svg" alt="First icon for B-dent services">
+    <img class="col-sm-6 col-md-6 col-lg-5 col-xl-5 BDentIcon" src="assets/svg/B-dent_Icon2.svg" alt="First icon for B-dent services">
+    <img class="col-sm-6 col-md-6 col-lg-5 col-xl-5 BDentIcon" src="assets/svg/B-dent_Icon3.svg" alt="First icon for B-dent services">
+    <img class="col-sm-6 col-md-6 col-lg-5 col-xl-5 BDentIcon" src="assets/svg/B-dent_Icon4.svg" alt="First icon for B-dent services">
+</a>
+</div>
+
+
+
 
 
   <!--Modal-->
@@ -660,12 +657,10 @@
 
 <!--project 4-->
 
-<div class="content-elements" id="Project5">
-  <div class="BetongBack">
-  </div>
+<div class="content-elements BetongBack" id="Project5">
 
 <div class="container h-100">
-  <div class="row h-100 align-items-center justify-content-around no-gutters">
+  <div class="row h-100 align-items-center justify-content-around">
     <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
       <h2>Dom-ino house (Le Corbusier) in perpetual recurrence</h2>
       <p class="twoColumnText">Illustration was printed in Arkitekten02 in 2017, and reprinted in Arkitekten01 in 2018, med tema ”Bedst og værst i 2017” (Best and worst in 2017).<br>
@@ -675,7 +670,7 @@
   </div>
 
 
-      <div class="col-auto">
+      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
         <a id="modalBtn5" role="button" data-target="#modall">
           <img class="ProjPic"
                srcset = "assets/jpg/Scan-fra-magasinet_S.jpg 2000w,
@@ -705,9 +700,8 @@
 
       <!--project 5-->
 
-  <div class="content-elements" id="Project6">
-  <div class="GreenStreetBack">
-  </div>
+  <div class="content-elements GreenStreetBack" id="Project6">
+
 
   <div class="container h-100">
   <div class="row h-100 align-items-center justify-content-around no-gutters">
@@ -718,7 +712,7 @@
   </div>
 
 
-    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <div class="col-auto">
       <a id="modalBtn6" role="button" data-target="#modall">
         <img class="ProjPic GreenStreet" src="assets/svg/Green-street-elements.svg" alt="Street elements put together in a random arrangement">
       </a>
@@ -734,7 +728,7 @@
 
       <!--Carousel elements-->
 
-          <div id="carouselIndicators3" class="carousel slide" data-ride="carousel">
+          <div id="carouselIndicators6" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselIndicators6" data-slide-to="0" class="active"></li>
               <li data-target="#carouselIndicators6" data-slide-to="1"></li>

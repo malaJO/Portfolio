@@ -12,9 +12,11 @@ body {
   width: 16rem;
 }
 
-.container {
-  width: 90vw;
+.content-elements {
   margin-left: 16rem;
+  width: calc(100vw - 16rem);
+  border: 1px dashed blue;
+  height: 100%;
 }
 
 .twoColumnText {
@@ -284,12 +286,9 @@ transition: all 0.2s ease-in-out;
 
 /*About section*/
 
-.content-elements {
-  width: 100vw;
-  /*height: 100vh;*/
-}
 
-.col-sm-12, .col-md-12 {
+
+/*.col-sm-12, .col-md-12 {
   border: 1px solid red;
 }
 
@@ -297,18 +296,22 @@ transition: all 0.2s ease-in-out;
   border: 1px solid green;
 }
 
+.col-sm-6, .col-md-6 {
+  border: 1px solid cyan;
+}*/
+
 /*Sky and sea and buzzing - background for About section and Project sections*/
-.content-element {
-  width: 100vw;
-  position: relative;
-}
 
 .Sky {
   position: absolute;
   background-color: #2F9F99;
   height: 50vh;
-  width: 100vw;
+  width: calc(100vw - 16rem);
   border-bottom: 2px solid white;
+}
+
+.AboutImg {
+  width: 100%;
 }
 
 
@@ -319,10 +322,7 @@ transition: all 0.2s ease-in-out;
 }
 
 .SvgBack {
-  position: absolute;
   z-index: -2;
-  height: 100%;
-  width: 100%;
   background-image: url('assets/png/Buzzing.png');
   background-repeat: repeat;
   background-size: 800px;
@@ -352,6 +352,7 @@ h2::first-letter {
 
 h2 {
   margin-top: 60px;
+  margin-bottom: 40px;
 }
 
 
@@ -395,9 +396,6 @@ h2 {
     background: #D26167;
   }
 
-.ProjPic img {
-  min-width: 60vw;
-}
 
 svg {
   max-width: 60vw;

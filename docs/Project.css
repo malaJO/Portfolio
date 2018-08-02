@@ -30,11 +30,18 @@
 
 /*Project 1*/
 .ProjPic {
-  max-height: 70vh;
-  max-width: 40vw;
+  max-height: 60vh;
   cursor: pointer;
   padding-bottom: 2rem;
-  border: 2px solid magenta;
+}
+
+#modalBtn4 {
+  cursor: pointer;
+  padding-bottom: 2rem;
+}
+
+.ProjPic img {
+  max-width: 50vw;
 }
 
 #Project1 h2, #Project1 p {
@@ -48,12 +55,15 @@
 }
 
 .BetongBack {
-  position: absolute;
-  height: 100%;
-  width: 100vw;
   background-image: url('assets/jpg/Beton-og-Bevaring-Illustrasjon_S.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
+}
+
+.B-dentBack {
+  background-image: url('assets/png/BDentPattern.png');
+  background-repeat: repeat;
+  background-size: 4rem;
 }
 
 #Project5 h2, #Project5 p {
@@ -67,8 +77,10 @@
   width: 40vw;
 }
 
-.Bdent {
-  width: 40vw;
+.BDentIcon {
+  height: 12rem;
+  width: 12rem;
+  padding: 0.6rem 1.4rem;
 }
 
 .GreenStreet {
