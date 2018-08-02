@@ -31,8 +31,10 @@
 /*Project 1*/
 .ProjPic {
   max-height: 70vh;
+  max-width: 40vw;
   cursor: pointer;
   padding-bottom: 2rem;
+  border: 2px solid magenta;
 }
 
 #Project1 h2, #Project1 p {
@@ -99,4 +101,8 @@
 
 .col-auto {
   overflow: visible;
+}
+
+#Project6 {
+  padding-bottom: 3.4rem;
 }

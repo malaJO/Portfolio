@@ -9,20 +9,31 @@ body {
 
 .navbar {
   padding: 0;
-
+  width: 16rem;
 }
 
 .container {
   width: 90vw;
-  margin-left: 18rem;
+  margin-left: 16rem;
+}
+
+.twoColumnText {
+  column-count: 2;
+  column-gap: 0.4rem;
 }
 
 /*Navigation*/
 .nav {
   background-color: white;
-  width: 18rem;
+  width: 16rem;
   height: 100vh;
-  overflow-y:scroll;
+  float: left;
+  box-shadow: 0.1rem 0.1rem 0.6rem -0.2rem #E1AE7D;
+}
+
+.nav-item {
+  padding: 2px 0;
+  width: 14rem;
 }
 
 .nav-link {
@@ -30,41 +41,52 @@ body {
   padding: 0;
 }
 
+.nav .col-12 {
+  padding: 0.4vh 0;
+}
+
 .navicon {
-  padding:2rem 0.4rem;
+  padding:0 0.1rem;
   margin: 0;
-  width: 2.4rem;
+  width: 2.2rem;
 }
 
 .abouticon {
-  width: 114px;
-  padding-top: 14vh;
-  padding-bottom: 1rem;
+  width: 6.8rem;
+  padding-top: 6vh;
+  padding-bottom: 0.6rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .TextNav {
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-style: italic;
   font-size: 2rem;
+  display: inline;
+}
+
+.ContactSec {
+  width: 14rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .ProjectsSec a {
   color: black;
 }
 
-.ProjectsSec {
-  margin-top: 6vh;
 
-}
+/*.ContactSec {
+  position: absolute;
+  bottom: 1.6vh;
+}*/
 
 .DescriptText {
   text-align: center;
+  color: #E1AE7D;
 }
 
 .TextAbout {
@@ -73,29 +95,17 @@ body {
   font-style: italic;
   font-size: 2rem;
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  width: 15rem;
-}
-
-.col-12 {
-padding: 6px 0;
-
-
+  border-top: 1px solid #E1AE7D;
+  border-bottom: 1px solid #E1AE7D;
+  width: 14rem;
 }
 
 .nav-text {
- /*visibility: hidden;*/
  padding-bottom: 2px;
 }
 
-.LinkToProj {
-  height: 60px;
-
-}
-
 .projicon {
-  width: 58px;
+  width: 4.4vh;
   vertical-align: top;
 }
 
@@ -105,15 +115,48 @@ padding: 6px 0;
   width: 72%;
   text-align: left;
   padding-left: 4px;
-  line-height: 60px;
-
+  line-height: 4.4vh;
 }
 
 .KeepInTouch {
   display: inline-block;
   cursor: pointer;
-
 }
+
+/*Invisible in desktop verison*/
+
+.mobileShow {
+  display: none;
+}
+
+/*@media (max-height:800px) {
+
+  .nav {
+    overflow-y: auto;
+    background-color: black;
+  }
+
+
+
+  .TextAbout {
+    font-size: 1.8rem;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 14rem;
+  }
+
+  .abouticon {
+    width: 6.2rem;
+    padding-top: 2.4vh;
+  }
+
+  .ProjectsSec {
+    padding-bottom: 8vh;
+  }
+
+}*/
+
 /*Sidemenu for projects*/
 
 .dropdown-content {
@@ -165,44 +208,25 @@ padding: 6px 0;
 
 /*States of the navbar*/
 
-/*.nav-link.active {
-       animation-name: colourChange;
-       animation-duration: 0.4s;
-       animation-timing-function: ease-out;
-       animation-direction: alternate;
-       animation-iteration-count: 2;
+.nav-link.active {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
 }
 
 .nav-link:hover {
-transform: scale(1.2);
+transform: scale(1.08);
 transition: all 0.2s ease-in-out;
-background-color: #3C2427;
-color: white;
-height: 100%;
 }
 
-.nav-link:hover .nav-text {
-  visibility: visible;
-  animation-name: slideInLeft;
-  animation-duration: 0.1s;
-  animation-timing-function: ease-in;
+.navicon.active, .navicon:hover {
+  transform: scale(1.4);
+  transition: all 0.2s ease-in-out;
 }
-
-.nav-link.active>.navicon {
-  transform: scale(1.2);
-  transition: all 0.6s ease-in-out;
-}
-
-*/
 
 
 
 /*Animating different states of the navbar*/
 
-@keyframes colourChange {
-    from {background-color: #55383C;}
-    to {background-color: white;}
-}
 
 @keyframes fadeIn {
   from {opacity: 0}
@@ -263,7 +287,14 @@ height: 100%;
 .content-elements {
   width: 100vw;
   /*height: 100vh;*/
+}
 
+.col-sm-12, .col-md-12 {
+  border: 1px solid red;
+}
+
+.col-sm-10, .col-md-10 {
+  border: 1px solid green;
 }
 
 /*Sky and sea and buzzing - background for About section and Project sections*/
@@ -308,7 +339,6 @@ h2::first-letter {
   font-size: 102px;
   font-weight: bold;
   letter-spacing: -8px;
-  line-height: 0.4;
 }
 
 .pad {

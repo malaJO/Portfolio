@@ -40,82 +40,94 @@
 </head>
 
 
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="5">
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="2">
 
 <!--Navigation-->
 
 <!--Nav-link class is changing with active and inactive and is connected to the scrollspy, so nav-link has to stay in all that are relevant for scrollspy (decide if this should be only the main sections, or the projects as well)-->
 
 <nav class="navbar fixed-bottom" id="myScrollspy">
-<div class="container-fluid">
+<!--<div class="container-fluid">-->
       <ul class="row nav justify-content-center no-gutters">
         <li class="nav-item">
+          <a href="#About" class="active nav-link">
             <img class="abouticon" src="assets/svg/Navbar_icons/AboutIcon.svg" alt="about">
-            <!--<div class="nav-text">About me
-            </div>Text describing the icon on hover, question if I need it anymore?-->
-
-          <div class="nav-link TextAbout col-12" href="#About">Jovana Pavić</div>
-          <div class="nav-link col-12 DescriptText" href="#About">DIGITAL DESIGNER</div>
+          </a>
+          <a href="#About" class="mobileNav mobileShow">
+            <img src="assets/svg/Navbar_icons/AboutIcon_mobile.svg" alt="Jovanas pictogram">
+            <p class="mobileShow mobileText">Jovana's home</p>
+          </a>
+          <div class="TextAbout col-12" href="#About">Jovana Pavić</div>
+          <div class="col-12 DescriptText" href="#About">DIGITAL DESIGNER</div>
         </li>
 
         <!--Projects-->
-        <div class="ProjectsSec col-10">
-        <li class="nav-item">
-          <a class="LinkToProj TextNav" href="#Projects">Projects:</a>
+        <div class="ProjectsSec nav-item">
+        <li class="mx-auto dropBtn">
+          <a class="mobileText mobileNav mobileShow" href="#Projects">
+              <img src="assets/svg/Navbar_icons/Projects_mobile.svg" alt="All projects pictogram">
+              <p class="mobileShow mobileText">Projects</p>
+          </a>
+          <p class="TextNav">Projects:</p>
         </li>
-
-
-        <li class="nav-item col-12">
-          <a class="LinkToProj" href="#Project1">
+        <div class="dropupContent">
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project1">
             <img class="projicon" src="assets/svg/Navbar_icons/NescafeIcon.svg" alt="Nescafé Azera coffee tin">
             <div class="projtext">Nescafé Azera tin</div>
           </a>
         </li>
-        <li class="nav-item col-12">
-          <a class="LinkToProj" href="#Project2">
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project2">
             <img class="projicon" src="assets/svg/Navbar_icons/SkillshareIcon.svg" alt="New icon set for SkillShare">
             <div class="projtext">Icon set for SkillShare</div>
           </a>
         </li>
-        <li class="nav-item col-12">
-          <a class="LinkToProj" href="#Project3">
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project3">
             <img class="projicon" src="assets/svg/Navbar_icons/WalkingIcon.svg" alt="Walking strategy for Oslo">
             <div class="projtext">Oslo walking strategy</div>
           </a>
         </li>
-        <li class="nav-item col-12">
-          <a class="LinkToProj" href="#Project4">
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project4">
             <img class="projicon" src="assets/svg/Navbar_icons/BDentIcon.svg" alt="Web & graphic design B-dent">
-            <div class="projtext">B-dent dentist</div>
+            <div class="projtext">B-dent dentistry</div>
           </a>
         </li>
-        <li class="nav-item col-12">
-          <a class="LinkToProj" href="#Project5">
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project5">
             <img class="projicon" src="assets/svg/Navbar_icons/DominoIcon.svg" alt="Dom-ino house (Le Corbusier) in perpetual recurrence">
             <div class="projtext">Dom-ino house</div>
           </a>
         </li>
-        <li class="nav-item col-12">
-          <a class="LinkToProj" href="#Project6">
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project6">
             <img class="projicon" src="assets/svg/Navbar_icons/GreenStreetIcon.svg" alt="Green street">
             <div class="projtext">Green street</div>
           </a>
         </li>
       </div>
+    </div>
 
         </li>
-        <li class="nav-item col-10">
-          <div class="TextNav ProjectsSec">Keep in touch!
-          <a class="nav-link KeepInTouch" href="mailto:jovana.pavic@gmail.com"><img class="navicon" src="assets/svg/Navbar_icons/Email.svg" alt="contact"></a>
-          <a class="nav-link KeepInTouch" href="tel:+4794423967"><img class="navicon" src="assets/svg/Navbar_icons/Call.svg" alt="contact"></a>
-          <a class="nav-link KeepInTouch" href="https://github.com/malaJO" target="_blank"><img class="navicon" src="assets/svg/Navbar_icons/Github.svg" alt="contact"></a>
-          <a class="nav-link KeepInTouch" href="https://www.interaction-design.org/jovana-pavic" target="_blank"><img class="navicon" src="assets/png/Navbar_icons/idf.png" alt="contact"></a>
-          <a class="nav-link KeepInTouch" href="https://trydesignlab.com/certificates/design-101-v1/malaJ0/" target="_blank"><img class="navicon" src="assets/png/Navbar_icons/Designlab.png" alt="contact"></a>
+        <li class="nav-item dropBtn dropContact">
+          <a class="mobileNav mobileShow">
+            <img src="assets/svg/Navbar_icons/Contact_mobile.svg" alt="contact">
+            <p class="mobileShow mobileText">Contact me</p>
+          </a>
+          <div class="TextNav ContactSec dropupContent">
+            <p class="TextNav">Keep in touch!</p>
+            <a class="KeepInTouch" href="mailto:jovana.pavic@gmail.com?subject=Message for the spider weber"><img class="navicon" src="assets/svg/Navbar_icons/Email.svg" alt="contact"></a>
+            <a class="KeepInTouch" href="tel:+4794423967"><img class="navicon" src="assets/svg/Navbar_icons/Call.svg" alt="contact"></a>
+            <a class="KeepInTouch" href="https://github.com/malaJO" target="_blank"><img class="navicon" src="assets/svg/Navbar_icons/Github.svg" alt="contact"></a>
+            <a class="KeepInTouch" href="https://www.interaction-design.org/jovana-pavic" target="_blank"><img class="navicon" src="assets/png/Navbar_icons/idf.png" alt="contact"></a>
+            <a class="KeepInTouch" href="https://trydesignlab.com/certificates/design-101-v1/malaJ0/" target="_blank"><img class="navicon" src="assets/png/Navbar_icons/Designlab.png" alt="contact"></a>
           </div>
-
         </li>
+
       </ul>
-      </div>
+      <!--</div>-->
     </nav>
 
 
@@ -131,18 +143,20 @@
 
         </div>
 
-        <div class="container h-100 col-sm-12 col-md-12 col-lg-auto col-xl-auto">
+        <div class="container h-100 col-sm-10 col-md-10 col-lg-auto col-xl-auto">
           <div class="row h-100 align-items-center no-gutters">
             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 AboutText">
                 <h2 class="pad selectbright">This is the portfolio of Jovana Pavić</h2>
-                <p class="selectbright">Architect by training, everything else by vocation.<br>
+
+                <p class="selectbright twoColumnText">Architect by training, everything else by vocation.<br>
                  I'm an aspiring designer and totally in love with css animations. Even got myself to going through a java script course so I could trigger the animation exactly when I wanted it to <span>(maybe you'll notice it down the scroll..)</span>.<br>
                  I am a spider-web thinker <span>(and proud of it)</span>, empathic in my nature and still learning to be patient. Dedicated digressionist <span>(missed that, didn't you)</span> I am a dedicated team-player, and really enjoy working in teams as that makes me verbalize my thoughts <span>(which seams to be much less sparkling in the air than in my head, for some reason...)</span></p>
+
             </div>
 
 
 
-              <div class="ProjPic col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <div class="ProjPic col-sm-10 col-md-10 col-lg-6 col-xl-6">
                 <a class="selectdark" href="#Project1"><img class="AboutImg" src="assets/svg/BackgroundMountainsBig.svg" alt="Mountains reflecting in the fjord"></a>
 
 
@@ -159,7 +173,7 @@
       </div> <!--//Closes content-elements-->
 
 
-<!--Projects sections-->
+<!--Projects sections
       <div class="content-elements" id="Projects">
         <div class="container h-100 align-middle">
           <div class="row h-100 align-items-center justify-content-around align-self-center no-gutters">
@@ -169,10 +183,10 @@
                     Some are kind of new, as this website you are curently navigating, some are not so new, but still relevant for me.</p>
             </div>
 
-            <div class="col-4">
+            <div class="col-4">-->
 
                 <!--Svg set from this point to end of div, don't change -->
-              <svg class="animdemo ProjPic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.81 399">
+            <!--  <svg class="animdemo ProjPic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.81 399">
                 <defs>
                   <style>.cl-1{isolation:isolate;}.cl-2{fill:#FFCE5F;}.cl-2,.cl-3{mix-blend-mode:multiply;}.cl-3{fill:#f69420;}</style>
                 </defs>
@@ -192,7 +206,7 @@
           </div>
           </div>
         </div>
-      </div>
+      </div>-->
 
   <!--Nescafe Azera - Project1-->
 
@@ -204,7 +218,7 @@
   <div class="row h-100 align-items-center no-gutters justify-content-around">
     <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
       <h2>Nescafe Azera tin design</h2>
-      <p>Design competition for Nescafé Azera coffee tin - awarded 2nd place in Norway.<br>
+      <p class="twoColumnText">Design competition for Nescafé Azera coffee tin - awarded 2nd place in Norway.<br>
          Nescafé company has announced a competition for illustrators and designers for the best design of Nescafé Azera coffee tin. <br>
          The theme for the competition was “Taste of the City“, and the competition took place in April, with winners announced in May 2018.
       <br>"People illustrated from a completely different angle, observed from the exact top of view help creating city wild atmosphere on a weekend morning when people have enough free time to roam and sit around, have coffee. It is a beautiful moment that has been captured in this design.” Pavel Fuksa, jury member.
@@ -397,7 +411,7 @@
 <div class="row h-100 align-items-center justify-content-around no-gutters">
   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
     <h2>Walking strategy for Oslo</h2>
-    <p>The strategy for increasing walking in the city of Oslo was made in a collaborative process with various stakeholders.<br> One of the main findings was that while everybody speaks and listens to what the public as well as the officials are saying about cycling, walkability or walking at all are not on the agenda for the decision-makers. This of course means that there are no funds allocated for improving walkability, and thus it became one of the important goals in the development of the implementation strategy: put the walking on the political and policy agenda.
+    <p class="twoColumnText">The strategy for increasing walking in the city of Oslo was made in a collaborative process with various stakeholders.<br> One of the main findings was that while everybody speaks and listens to what the public as well as the officials are saying about cycling, walkability or walking at all are not on the agenda for the decision-makers. This of course means that there are no funds allocated for improving walkability, and thus it became one of the important goals in the development of the implementation strategy: put the walking on the political and policy agenda.
     </p>
 </div>
 
@@ -546,12 +560,12 @@
 <div class="row h-100 align-items-center justify-content-around no-gutters">
 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
   <h2>Web & graphic design for “B-dent” dentist practice</h2>
-  <p>The client wanted to assert their pressence on the web, and thus needed a web page. Beeing a new dental practice, the clint didn’t have visuals, brand or logo developed, and this turned out to be an important aspect of the work.<br>
+  <p class="twoColumnText">The client wanted to assert their pressence on the web, and thus needed a web page. Beeing a new dental practice, the client didn’t have visuals, brand or logo developed, and this turned out to be an important aspect of the work.<br>
   Jovana has developed graphic design components - colour pallett, logo, illustrations, as well as some simple coding in HTML og CSS. Check the website running <a href="https://b-dent.rs/" target="_blank">here</a>.</p>
 </div>
 
 
-  <div class="col-auto">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
     <a id="modalBtn4" role="button" data-target="#modall">
       <img class="ProjPic Bdent"
            srcset = "assets/png/B-dent_S.png 459w,
@@ -652,9 +666,9 @@
 
 <div class="container h-100">
   <div class="row h-100 align-items-center justify-content-around no-gutters">
-    <div class="col">
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
       <h2>Dom-ino house (Le Corbusier) in perpetual recurrence</h2>
-      <p>Illustration was printed in Arkitekten02 in 2017, and reprinted in Arkitekten01 in 2018, med tema ”Bedst og værst i 2017” (Best and worst in 2017).<br>
+      <p class="twoColumnText">Illustration was printed in Arkitekten02 in 2017, and reprinted in Arkitekten01 in 2018, med tema ”Bedst og værst i 2017” (Best and worst in 2017).<br>
         Rikke Stenbro explores in the article the idea that the simple model as the famous Dom-ino house has facilitated mass-produced buildings and a more generic city. This, as a consequence, gave rise to increased interest for preservation as well as cultivation of monuments as the preferred category for building conservation. <br>
       </p>
 
@@ -696,15 +710,15 @@
   </div>
 
   <div class="container h-100">
-  <div class="row h-100 align-items-center no-gutters justify-content-around no-gutters">
+  <div class="row h-100 align-items-center justify-content-around no-gutters">
   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
     <h2>Graphic design for Green street</h2>
-    <p>Green street is thought as a simple tool for urban planners to build a street section, and as a spinnoff of <a href="https://streetmix.net/" target="_blank">streetmix.net</a>, localised for Norwegian users and enriched with blue-infrastructure elements - i.e. water-infrastructure elements for managing stormwater runoff, which can inform and improve the design of the “above-ground” green elements.<br>
+    <p class="twoColumnText">Green street is thought as a simple tool for urban planners to build a street section, and as a spinnoff of <a href="https://streetmix.net/" target="_blank">streetmix.net</a>, localised for Norwegian users and enriched with blue-infrastructure elements - i.e. water-infrastructure elements for managing stormwater runoff, which can inform and improve the design of the “above-ground” green elements.<br>
     I developed graphic design elements - the overall design for the websites components, while the complete website design is stil pending, the website currenly being unfinished.
   </div>
 
 
-    <div class="col-auto">
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
       <a id="modalBtn6" role="button" data-target="#modall">
         <img class="ProjPic GreenStreet" src="assets/svg/Green-street-elements.svg" alt="Street elements put together in a random arrangement">
       </a>

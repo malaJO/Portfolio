@@ -210,12 +210,12 @@ endingModall[4].onclick = function() {
 
 
 //Adjusting size of the icons for Contact by width-height ratio
-
+/*
 var icon = document.getElementsByClassName('social');
 var lastIcon = document.getElementById("LogoD");
-
+*/
 /*Changing icon size dependent on the screen size*/
-lastIcon.onload = function () {
+/*lastIcon.onload = function () {
   for (i=0; i<icon.length; i++) {
     var widTH = icon[i].width;
     var heigHT = icon[i].height;
@@ -241,9 +241,9 @@ lastIcon.onload = function () {
     }
 }
 }
-
+*/
 /*Positioning of nav meny*/
-var navTop = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().y;
+/*var navTop = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().y;
 var navLeft = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().x;
 var sideBar = document.getElementsByClassName('dropdown-content')[0];
 var winHeight = window.innerHeight;
@@ -269,11 +269,16 @@ window.onclick = function(event) {
     sideBar.style.display = 'none';
     }
   }
+*/
 
-
-/*Button for dripdown content - we'll have to add a class to button .dropdown-clicked*/
-var dropdownButton = document.getElementById('dropdownButton');
-var dropContent = document.getElementsByClassName('dropdown-content');
+/*Button for dropdown content - we'll have to add a class to button .dropdown-clicked*/
+var dropdownButton = document.getElementsByClassName('dropBtn');
+var dropContent = document.getElementsByClassName('dropupContent');
+var navLinks = document.getElementsByClassName('drpupLink');
+var touch = document.getElementsByClassName('KeepInTouch');
+console.log(dropdownButton);
+console.log(navLinks);
+console.log(dropContent);
 
 
 
@@ -285,6 +290,10 @@ function displaying() {
     dropContent[0].style.display = 'block';
     dropContent[0].classList.remove('dropdown-clicked');
     console.log(dropContent[0]);
+    for (i=0; i<navLinks.length; i++){
+      navLinks[i].style.display = 'block';
+      navLinks[i].classList.remove('dropdown-clicked');
+    }
 
   } else {
     console.log('else');
@@ -292,10 +301,36 @@ function displaying() {
       dropContent[0].style.display = 'none';
     }
     dropContent[0].classList.add('dropdown-clicked');
-    setTimeout(setDisplayNone, 2000);
+    setTimeout(setDisplayNone, 0);
     console.log(dropContent[0]);
   }
 
 }
 
-dropdownButton.addEventListener('click', displaying);
+function displaying1() {
+  var disp = dropContent[1].style.display;
+  console.log(dropContent[1].style.display);
+  if (disp != "inline-block") {
+    console.log('if');
+    dropContent[1].style.display = 'inline-block';
+    dropContent[1].classList.remove('dropdown-clicked');
+    console.log(dropContent[1]);
+    for (i=0; i<touch.length; i++){
+      touch[i].style.display = 'inline-block';
+      touch[i].classList.remove('dropdown-clicked');
+    }
+
+  } else {
+    console.log('else');
+    function setDisplayNone () {
+      dropContent[1].style.display = 'none';
+    }
+    dropContent[1].classList.add('dropdown-clicked');
+    setTimeout(setDisplayNone, 0);
+    console.log(dropContent[1]);
+  }
+
+}
+
+dropdownButton[0].addEventListener('click', displaying);
+dropdownButton[1].addEventListener('click', displaying1);

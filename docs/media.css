@@ -7,65 +7,156 @@
 
 
 @media (max-width:768px){
+  .container {
+    margin: 0;
+  }
+
   .navbar {
     width: 100%;
   }
 
+/*not showing in mobile version*/
+
+.ContactSec {
+  display: none;
+}
+
+.DescriptText {
+  display: none;
+}
+
+.TextAbout {
+  display: none;
+}
+
+.TextNav {
+  display: none;
+}
+
+.nav-link {
+    display: none;
+}
+
+
+
+/*Showing only in mobile version*/
+
+.mobileText {
+  font-size: 1rem;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #334E5C;
+}
+
+.mobileShow {
+  display: inline-block;
+}
+
+.nav li {
+margin-left: auto;
+margin-right: auto;
+}
+
+.nav-item {
+  width: auto;
+}
+
+.mobileNav img {
+  width: 2.8rem;
+}
 
   .nav {
     width: 100vw;
-    height: 44px;
-    display: inline;
+    height: 3rem;
   }
 
-  .nav-link {
-      height: 44px;
-      width: 100%;
-  }
+
 
   .navicon {
     padding: 0;
     height: 100%;
   }
 
-  .nav-text {
-   visibility: visible;
-   padding-bottom: 2px;
-   display: inline;
-  }
 
-  .nav-item a:hover .nav-text {
-    transition-property: none;
-    transform: none;
-    animation: none;
-  }
-
-    .dropdown-content {
-      min-width: 80vw;
-      overflow: scroll;
-      height: 50vh;
-      padding-top: 0;
-  }
-
-  .dropdown:hover .dropdown-content {
-      display: block;
-      animation-name: slideInBottom;
-      animation-duration: 0.6s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: 1;
-  }
-
-  .dropdown-clicked {
-    animation-name: disappear;
-    animation-duration: 0.6s;
-  }
+.mobileNav:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
 
 
-/*Adjusting due to change of the navbar position*/
+/*Pop up menu*/
 
-  .high:first-child {
-    margin-left: 0;
-  }
+.ProjectsSec {
+  position: relative;
+  display: inline-block;
+}
+
+.dropupContent {
+  display: none;
+  position: absolute;
+  bottom: 3rem;
+  left: -15vw;
+  background-color: #f1f1f1;
+  width: 45vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.ProjectsSec:hover .dropupContent {
+  display: block;
+}
+
+.ProjectsSec:hover .nav-link {
+  display: block;
+  padding: 0.2rem 1rem;
+}
+
+.nav-link:hover {
+  background-color: white;
+}
+
+.ProjectsSec:hover .nav-link {
+  display: block;
+  padding: 0.2rem 1rem;
+}
+
+
+
+
+.ContactSec {
+  display: none;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  background-color: #f1f1f1;
+  width: 100vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.KeepInTouch {
+  display: none;
+  width: 18%;
+  padding: 3% 5%;
+}
+
+.KeepInTouch img {
+  width: 4rem;
+}
+
+.dropContact:hover .dropupContent {
+  display: block;
+}
+
+.dropContact:hover .KeepInTouch {
+  display: inline-block;
+}
+
+.dropContact:hover .KeepInTouch img {
+  width: 4rem;
+}
+
 
 /*Changing sizes for smaller screens*/
   .content-elements {
@@ -105,7 +196,6 @@
   .explain {
     position: relative;
     z-index: 100;
-    /*top: 30vh;*/
     text-align: right;
   }
 
@@ -113,9 +203,7 @@
     max-height: 50vh;
   }
 
-/*.AboutImg {
-  width: 100%;
-}*/
+
 
 #Contact {
   height: 100vh;
