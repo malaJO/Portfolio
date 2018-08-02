@@ -15,8 +15,6 @@ body {
 .content-elements {
   margin-left: 16rem;
   width: calc(100vw - 16rem);
-  border: 1px dashed blue;
-  height: 100%;
 }
 
 .twoColumnText {
@@ -107,7 +105,7 @@ body {
 }
 
 .projicon {
-  width: 4.4vh;
+  width: 4.2vh;
   vertical-align: top;
 }
 

@@ -22,38 +22,38 @@ function playAnim(x, y) {
     };
 }
 
-playAnim('Slovo_J', 'SlovoJ', 0); //Plays animation is the element is in view, in case user goes directly to page*/
+//playAnim('Slovo_J', 'SlovoJ', 0); //Plays animation is the element is in view, in case user goes directly to page*/
 
 
 
 /*Checks how log user has scrolled on Y axis and triggers animation if scrolled enough*/
-function startAnim(){
+/*function startAnim(){
  var scrollY = window.pageYOffset || document.documentElement.scrollTop;
  //console.log(scrollY);
 
   if (scrollY>800 && scrollY<1400) { /*If user scrolled enough to see the top or bottom of the element that is animated, then animation starts*/
 
-  var anima = document.getElementById('Slovo_J');
+  /*var anima = document.getElementById('Slovo_J');
   anima.classList.add('SlovoJ');
 /*} else if (scrollY>1400 && scrollY<2700) {
   var anima1 = document.getElementById('Sunshade_meaty');
   anima1.classList.add('Sunshade_meaty');
   var anima2 = document.getElementById('Sunshade_yellow');
   anima2.classList.add('Sunshade_yellow');*/
-} else if (scrollY>3100 && scrollY<3900) {
+/*} else if (scrollY>3100 && scrollY<3900) {
   var anima3 = document.getElementById('Chart_colour');
   anima3.classList.add('Chart_colour');
 }
 
-}
+}*/
 
 
-window.addEventListener('scroll', startAnim); /*Checks how log user has scrolled on Y axis and triggers animation if scrolled enough*/
+//window.addEventListener('scroll', startAnim); /*Checks how log user has scrolled on Y axis and triggers animation if scrolled enough*/
 
 
 //playAnim('Sunshade_meaty', 'Sunshade_meaty', 1);
 //playAnim('Sunshade_yellow', 'Sunshade_yellow', 1);
-playAnim('Chart_colour', 'Chart_colour', 2);
+//playAnim('Chart_colour', 'Chart_colour', 2);
 
 
 /* Randomizing font size and family, and background opacity main text in About section */
@@ -286,58 +286,45 @@ var dropdownButton = document.getElementsByClassName('dropBtn');
 var dropContent = document.getElementsByClassName('dropupContent');
 var navLinks = document.getElementsByClassName('drpupLink');
 var touch = document.getElementsByClassName('KeepInTouch');
-console.log(dropdownButton);
-console.log(navLinks);
-console.log(dropContent);
 
 
 
 function displaying() {
   var disp = dropContent[0].style.display;
-  console.log(dropContent[0].style.display);
   if (disp != "block") {
-    console.log('if');
-    dropContent[0].style.display = 'block';
+      dropContent[0].style.display = 'block';
     dropContent[0].classList.remove('dropdown-clicked');
-    console.log(dropContent[0]);
     for (i=0; i<navLinks.length; i++){
       navLinks[i].style.display = 'block';
       navLinks[i].classList.remove('dropdown-clicked');
     }
 
   } else {
-    console.log('else');
     function setDisplayNone () {
       dropContent[0].style.display = 'none';
     }
     dropContent[0].classList.add('dropdown-clicked');
     setTimeout(setDisplayNone, 0);
-    console.log(dropContent[0]);
-  }
+    }
 
 }
 
 function displaying1() {
   var disp = dropContent[1].style.display;
-  console.log(dropContent[1].style.display);
   if (disp != "inline-block") {
-    console.log('if');
     dropContent[1].style.display = 'inline-block';
     dropContent[1].classList.remove('dropdown-clicked');
-    console.log(dropContent[1]);
-    for (i=0; i<touch.length; i++){
+      for (i=0; i<touch.length; i++){
       touch[i].style.display = 'inline-block';
       touch[i].classList.remove('dropdown-clicked');
     }
 
   } else {
-    console.log('else');
     function setDisplayNone () {
       dropContent[1].style.display = 'none';
     }
     dropContent[1].classList.add('dropdown-clicked');
     setTimeout(setDisplayNone, 0);
-    console.log(dropContent[1]);
   }
 
 }

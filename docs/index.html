@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Project.css">
     <link rel="stylesheet" href="Contact.css">
-    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="imagemodals.css">
+    <link rel="stylesheet" href="media.css">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -303,35 +304,35 @@
 
     <!--Skillshare Icons - Project2-->
 
-    <div class="content-elements" id="Project2">
-      <div class="SvgBack">
-      </div>
+    <div class="content-elements SkillshareBack" id="Project2">
 
   <div class="container h-100">
-    <div class="row h-100 align-items-center no-gutters justify-content-around">
+    <div class="row h-100 align-items-center justify-content-around">
       <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-        <h2>Nescafe Azera tin design</h2>
-        <p>Design competition for Nescafé Azera coffee tin - awarded 2nd place in Norway.<br>
-           Nescafé company has announced a competition for illustrators and designers for the best design of Nescafé Azera coffee tin. <br>
-           The theme for the competition was “Taste of the City“, and the competition took place in April, with winners announced in May 2018.
-        <br>"People illustrated from a completely different angle, observed from the exact top of view help creating city wild atmosphere on a weekend morning when people have enough free time to roam and sit around, have coffee. It is a beautiful moment that has been captured in this design.” Pavel Fuksa, jury member.
-        You'll find more info on the following <a href="http://www.czechdesign.cz/temata-a-rubriky/winners-of-nescafe-azera-2018-taste-of-the-city-design-competition" target="_blank">link</a>.
-      </p>
-
-
+        <h2>New icon set for SkillShare</h2>
+        <p class="twoColumnText">SkillShare had invited to a workshop, with goal to make the new icon set for the SkillShare platform. Work started with two SkillShare classes that focus on icon design, and then it was up to each participant to make a proposal. The community was commenting and questioning designs and design decisions, and the work was then judged by a SkillShare team, who chose the winning design.<br>
+          Design constraints were given in form of colours and stroke styles, and focus was put on pixel perfection, as the icons were to be videly used across printed and web  material.<br>
+          The icons were to depict 10 different actions - and I focused on each of those: what do they really mean, what do we (users) associate with the specific actions trained by years of internet browsing, and how do specific actions differ one from another, in what way are they actually different and what could nudge out attention to the correct one if we are looking at them side by side.
+          <br>What I've enjoyed most working with the task, was the "save" icon. I wanted to do a little twist on the traditional floppy disc icon, and looked for another medium for storing data - one that's starting to be retro nowadays is a CD, and though it would be interesting to see if this one takes on. Then some other participants pointed out that CD could rather be interpreted as sound or music than as burning CDs with data, a.k.a. saving. This is why the final design uses USB as a depiction of the save action.
+        </p>
     </div>
-        <div class="col-auto">
-          <a id="modalBtn2" role="button" data-target="#modall">
-            <img class="ProjPic"
-                 srcset="assets/png/Skillshare_vertical.png 64w,
-                         assets/png/Skillshare_horizontal.png 224w"
 
-                sizes="(orientation:portrait) 64px
-                       (orientation:landscape) 224px"
+    <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
+    <a id="modalBtn2" role="button" data-target="#modall" class="row align-items-center justify-content-around SkillRound">
 
-                 src="assets/png/Skillshare_vertical.png"
-                 alt="Save, download and play video icon">
-          </a>
+        <img class="col-sm-3 col-md-4 col-lg-3 col-xl-3 SkillShareIcon" src="assets/svg/SkillShareIcons/Save.svg" alt="Save icon">
+        <img class="col-sm-3 col-md-3 col-lg-3 col-xl-3 SkillShareIcon" src="assets/svg/SkillShareIcons/Download.svg" alt="Download icon">
+        <img class="col-sm-4 col-md-4 col-lg-3 col-xl-3 SkillShareIcon mobileHide" src="assets/svg/SkillShareIcons/Play.svg" alt="Play icon">
+        <img class="col-sm-3 col-md-3 col-lg-3 col-xl-3 SkillShareIcon mobileHide" src="assets/svg/SkillShareIcons/MyClasses.svg" alt="Icon for my classes">
+        <img class="col-sm-3 col-md-3 col-lg-3 col-xl-3 SkillShareIcon" src="assets/svg/SkillShareIcons/Teacher.svg" alt="Teacher icon">
+        <img class="col-sm-3 col-md-3 col-lg-3 col-xl-3 SkillShareIcon" src="assets/svg/SkillShareIcons/Student.svg" alt="Student icon">
+        <img class="col-sm-3 col-md-3 col-lg-3 col-xl-3 SkillShareIcon " src="assets/svg/SkillShareIcons/Discussion.svg" alt="Icon for discussion">
+        <img class="col-sm-3 col-md-3 col-lg-3 col-xl-3 SkillShareIcon" src="assets/svg/SkillShareIcons/Search.svg" alt="Search icon">
+        <img class="col-sm-3 col-md-3 col-lg-3 col-xl-3 SkillShareIcon mobileHide" src="assets/svg/SkillShareIcons/Notification.svg" alt="Icon for notification">
+        <img class="col-sm-3 col-md-3 col-lg-3 col-xl-3 SkillShareIcon mobileHide" src="assets/svg/SkillShareIcons/LearningPath.svg" alt="Icon for learning path">
+
+    </a>
+    </div>
             <!--Modal-->
             <div id="modall" class="modall">
               <div class="modall-content">
@@ -343,38 +344,20 @@
                     <ol class="carousel-indicators">
                       <li data-target="#carouselIndicators2" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselIndicators2" data-slide-to="1"></li>
-                      <li data-target="#carouselIndicators2" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img class="modalPic d-block w-100" src="assets/png/Skillshare_icons.png" alt="The compete set of icons">
                         <div class="modalText">
-                          <h5>Nescafe Azera tin with illustration applied</h5>
+                          <h5>Finished icon set</h5>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100 modalPic"
-                             srcset = "assets/jpg/Buzzing-with-brand_S.jpg 1359w,
-                                      assets/jpg/Buzzing-with-brand.jpg 2717w"
-                             sizes = "(max-width: 768px) 100vw,
-                                    100vw"
-                             src="assets/jpg/Buzzing-with-brand.jpg"
-                             alt="Unwrapped tin with the illustration and brand design applied">
+                        <img class="modalPic d-block w-100" src="assets/png/Skillshare_save.png" alt="The compete set of icons">
                       <div class="modalText">
-                        <h5>Unwrapped tin with the illustration and brand design applied</h5>
+                        <h5>Progress of the Save icon - from CD to USB</h5>
                       </div>
                     </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100 modalPic"
-                             srcset = "assets/jpg/Vastness-with-Tin_S.jpg 1354w,
-                                       assets/jpg/Vastness-with-Tin.jpg 2708w"
-                             sizes = "(max-width: 768px) 100vw,
-                                  100vw"
-                             src="assets/jpg/Vastness-with-Tin.jpg" alt="Nescafe tin with the second illustration applied and with illustration as a background">
-                        <div class="modalText">
-                          <h6>The second entry to the competition, not chosen by the jury.</h6>
-                        </div>
-                      </div>
 
                     </div>
                     <a class="carousel-control-prev" href="#carouselIndicators2" role="button" data-slide="prev">
@@ -393,7 +376,6 @@
         </div>
         </div>
         </div>
-      </div>
 
 
       <!--project 2 Walking strategy Gastrategi-->
@@ -552,14 +534,14 @@
 
 <div class="container h-100">
 <div class="row h-100 align-items-center justify-content-around ">
-<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+<div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
   <h2>Web & graphic design for “B-dent” dentist practice</h2>
   <p class="twoColumnText">The client wanted to assert their pressence on the web, and thus needed a web page. Beeing a new dental practice, the client didn’t have visuals, brand or logo developed, and this turned out to be an important aspect of the work.<br>
   Jovana has developed graphic design components - colour pallett, logo, illustrations, as well as some simple coding in HTML og CSS. Check the website running <a href="https://b-dent.rs/" target="_blank">here</a>.</p>
 </div>
 
 
-<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 BDent">
+<div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 BDent">
 <a id="modalBtn4" role="button" data-target="#modall" class="row h-100 align-items-center justify-content-around no-gutters">
 
     <img class="col-sm-6 col-md-6 col-lg-5 col-xl-5 BDentIcon" src="assets/svg/B-dent_Icon1.svg" alt="First icon for B-dent services">
@@ -661,7 +643,7 @@
 
 <div class="container h-100">
   <div class="row h-100 align-items-center justify-content-around">
-    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
       <h2>Dom-ino house (Le Corbusier) in perpetual recurrence</h2>
       <p class="twoColumnText">Illustration was printed in Arkitekten02 in 2017, and reprinted in Arkitekten01 in 2018, med tema ”Bedst og værst i 2017” (Best and worst in 2017).<br>
         Rikke Stenbro explores in the article the idea that the simple model as the famous Dom-ino house has facilitated mass-produced buildings and a more generic city. This, as a consequence, gave rise to increased interest for preservation as well as cultivation of monuments as the preferred category for building conservation. <br>

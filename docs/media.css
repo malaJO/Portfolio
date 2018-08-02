@@ -221,6 +221,41 @@ margin-right: auto;
   font-size: 0.8rem;
 }
 
+/*Opens up modal over entire pages*/
+
+.modall {
+    width: 100%; /* Full width */
+    left: 0; /*Returns modal to the left edge*/
+}
+
+.mobileHide {
+  display: none;
+}
 
 
 } /*Closes entire media query*/
+
+
+@media (max-width:400px){
+  .mobileNav img {
+    width: 2rem;
+  }
+
+  .dropupContent {
+    width: 65vw;
+  }
+
+  .ContactSec {
+    width: 100vw;
+  }
+
+  .KeepInTouch img {
+    width: 3.2rem;
+  }
+
+  .mobileText {
+    font-size: 0.8rem;
+  }
+
+
+}/*Closes media query*/
