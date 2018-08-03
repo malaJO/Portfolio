@@ -1,4 +1,4 @@
-/*Altering elements for mobile and smaller screen sizes*/
+/*For large screens some general settings*/
 @media (min-width:768px) {
   .content-elements, .row {
     min-height: 100vh;
@@ -9,7 +9,7 @@
   }
 }
 
-
+/*Altering elements for mobile and smaller screen sizes*/
 @media (max-width:768px){
   .content-elements {
     margin-left: 0;
@@ -42,7 +42,6 @@
 }
 
 
-
 /*Showing only in mobile version*/
 
 .mobileText {
@@ -70,18 +69,15 @@ margin-right: auto;
   width: 2.8rem;
 }
 
-  .nav {
-    width: 100vw;
-    height: 3rem;
-  }
+.nav {
+  width: 100vw;
+  height: 3rem;
+}
 
-
-
-  .navicon {
-    padding: 0;
-    height: 100%;
-  }
-
+.navicon {
+  padding: 0;
+  height: 100%;
+}
 
 .mobileNav:hover {
   transform: scale(1.1);
@@ -125,11 +121,9 @@ margin-right: auto;
   padding: 0.2rem 1rem;
 }
 
-
 .Sky {
   width: 100vw;
 }
-
 
 .ContactSec {
   display: none;
@@ -166,51 +160,48 @@ margin-right: auto;
 
 
 /*Changing sizes for smaller screens*/
-  .content-elements {
-    width: 100vw;
-    position: relative;
-  }
+.content-elements {
+  width: 100vw;
+  position: relative;
+}
 
 .high {
   height: auto;
-  }
+}
 
+.pad {
+  padding: 0;
+}
 
-  .pad {
-    padding: 0;
-  }
+h2 {
+  font-size: 1.6rem;
+}
 
-  h2 {
-    font-size: 1.6rem;
-  }
+body {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
 
-  body {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-  }
+h2::first-letter {
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 0.4;
+}
 
-  h2::first-letter {
-    font-size: 64px;
-    font-weight: bold;
-    letter-spacing: -2px;
-    line-height: 0.4;
-  }
+.explain p {
+  display: none;
+}
 
-  .explain p {
-    display: none;
-  }
-
-  .explain {
-    position: relative;
-    z-index: 100;
-    text-align: right;
-  }
+.explain {
+  position: relative;
+  z-index: 100;
+  text-align: right;
+}
 
 .ProjPic {
     max-height: 50vh;
-  }
-
-
+}
 
 #Contact {
   height: 100vh;
@@ -224,8 +215,8 @@ margin-right: auto;
 /*Opens up modal over entire pages*/
 
 .modall {
-    width: 100%; /* Full width */
-    left: 0; /*Returns modal to the left edge*/
+  width: 100%; /* Full width */
+  left: 0; /*Returns modal to the left edge*/
 }
 
 .mobileHide {
@@ -233,7 +224,7 @@ margin-right: auto;
 }
 
 
-} /*Closes entire media query*/
+} /*Closes entire media query for max-width 768px*/
 
 
 @media (max-width:400px){
@@ -258,4 +249,4 @@ margin-right: auto;
   }
 
 
-}/*Closes media query*/
+}/*Closes entire media query for max-width 400px*/

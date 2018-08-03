@@ -1,4 +1,5 @@
 /*General*/
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -22,7 +23,9 @@ body {
   column-gap: 0.4rem;
 }
 
+
 /*Navigation*/
+
 .nav {
   background-color: white;
   width: 16rem;
@@ -78,12 +81,6 @@ body {
   color: black;
 }
 
-
-/*.ContactSec {
-  position: absolute;
-  bottom: 1.6vh;
-}*/
-
 .DescriptText {
   text-align: center;
   color: #E1AE7D;
@@ -123,39 +120,13 @@ body {
   cursor: pointer;
 }
 
+
 /*Invisible in desktop verison*/
 
 .mobileShow {
   display: none;
 }
 
-/*@media (max-height:800px) {
-
-  .nav {
-    overflow-y: auto;
-    background-color: black;
-  }
-
-
-
-  .TextAbout {
-    font-size: 1.8rem;
-    text-align: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    width: 14rem;
-  }
-
-  .abouticon {
-    width: 6.2rem;
-    padding-top: 2.4vh;
-  }
-
-  .ProjectsSec {
-    padding-bottom: 8vh;
-  }
-
-}*/
 
 /*Sidemenu for projects*/
 
@@ -170,41 +141,6 @@ body {
     padding-top: 4rem;
 }
 
-#projClose {
-  color: white;
-  border: 1px solid yellow;
-  margin-left: 95%;
-  z-index: 50;
-}
-
-#projClose:hover {
-  transform: scale(1.2);
-
-}
-
-.dropdown-content a {
-    display: block;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.dropdown-content a:hover {
-  transform: scale(1.2);
-}
-
-.projLink:last-child {
-  margin-bottom: 46px;
-}
-
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    animation-name: slideInLeft;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-}
 
 /*States of the navbar*/
 
@@ -273,31 +209,6 @@ transition: all 0.2s ease-in-out;
 }
 
 
-
-/*Dropright button*/
-.btn-group {
-  position: relative;
-  margin-left: 100px;
-}
-
-
-
-/*About section*/
-
-
-
-/*.col-sm-12, .col-md-12 {
-  border: 1px solid red;
-}
-
-.col-sm-10, .col-md-10 {
-  border: 1px solid green;
-}
-
-.col-sm-6, .col-md-6 {
-  border: 1px solid cyan;
-}*/
-
 /*Sky and sea and buzzing - background for About section and Project sections*/
 
 .Sky {
@@ -311,7 +222,6 @@ transition: all 0.2s ease-in-out;
 .AboutImg {
   width: 100%;
 }
-
 
 
 #About {
@@ -347,12 +257,10 @@ h2::first-letter {
   margin-left: 40px;
 }
 
-
 h2 {
   margin-top: 60px;
   margin-bottom: 40px;
 }
-
 
 .explain {
   position: relative;
@@ -382,7 +290,7 @@ h2 {
 .explain > p > a, .explain > h3 > a {
   text-decoration: underline;
   color: white;
-  }
+}
 
 
   .selectdark::selection {
