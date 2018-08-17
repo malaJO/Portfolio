@@ -182,6 +182,7 @@ var dropdownButton = document.getElementsByClassName('dropBtn');
 var dropContent = document.getElementsByClassName('dropupContent');
 var navLinks = document.getElementsByClassName('drpupLink');
 var touch = document.getElementsByClassName('KeepInTouch');
+console.log(touch);
 
 function setDisplayNone (which) {
   which.style.display = 'none';
@@ -191,9 +192,10 @@ function displaying() {
   if (dropContent[0].style.display != "block") {
     dropContent[0].style.display = 'block';
     dropContent[0].classList.add('rise');
-  } else {
+  } else if (dropContent[0].style.display != "none") {
     dropContent[0].classList.remove('rise');
     setDisplayNone(dropContent[0]);
+
   }
 
 }
@@ -202,12 +204,39 @@ function displaying1() {
   if (dropContent[1].style.display != "inline-block") {
     dropContent[1].style.display = 'inline-block';
     dropContent[1].classList.add('rise');
-
-  } else {
+    setDisplayNone(dropContent[0]);
+  } else if (dropContent[1].style.display != "none") {
     setDisplayNone(dropContent[1]);
     dropContent[1].classList.remove('rise');
   }
+}
 
+/*
+} else if (navLinks[0].display.style != "none" ||
+          navLinks[1].display.style != "none" ||
+          navLinks[2].display.style != "none" ||
+          navLinks[3].display.style != "none" ||
+          navLinks[4].display.style != "none" ||
+          navLinks[5].display.style != "none" ){
+            setDisplayNone(dropContent[0]);
+
+          } else if (touch[0].display.style != "none" ||
+                    touch[1].display.style != "none" ||
+                    touch[2].display.style != "none" ||
+                    touch[3].display.style != "none" ||
+                    touch[4].display.style != "none" ){
+            setDisplayNone(dropContent[1]);
+*/
+
+document.onclick = function(event) {
+console.log(event.target.className);
+   if (event.target.className === 'projtext' ||
+       event.target.className === 'projicon' ||
+     event.target.className === 'mobileShow' && 'mobileText' ) {
+
+     setDisplayNone(dropContent[0]);
+     //setDisplayNone(dropContent[1]);
+  }
 }
 
 dropdownButton[0].addEventListener('click', displaying);
