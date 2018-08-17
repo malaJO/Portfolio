@@ -74,7 +74,7 @@ var Opac = 'rgba(255,255,255,' + Math.random() +')';
 spanovi.style.backgroundColor = Opac;
 var blackOpac = 'rgba(0,0,0,' + (Math.random()+0.5) +')'
 spanovi.style.color = blackOpac;
-//console.log(blackOpac);
+
 }
 }
 
@@ -85,21 +85,23 @@ spanovi.style.color = blackOpac;
 
 function calcHeight () {
 
-  var imgHeight = document.getElementsByClassName('AboutImg');
-  var renderedHeight = imgHeight[0].clientHeight;
+  var imgMF = document.getElementsByClassName('AboutImg')[0];
+  var renderedHeight = imgMF.clientHeight;
+  var positionOnPage = imgMF.y;
   var skyHeight = document.getElementsByClassName('Sky');
-  //var textHeight = document.getElementsByClassName('AboutText');
   var textBoxes = document.getElementsByClassName('selectbright');
   var headingHeight = textBoxes[1];
 
 
 
 
-if ((testScreen < '768') || (winWidth < '768')) {
-  //var textOriginal = textHeight[0].scrollHeight;
 
-  var calcHeight = renderedHeight/2 - 0.5 + textOriginal;
-  skyHeight[0].style.height = calcHeight + 'px';
+if ((testScreen < '768') || (winWidth < '768')) {
+
+
+  var calcHeight = positionOnPage + renderedHeight/2;
+   skyHeight[0].style.height = calcHeight + 'px';
+
 
 } else {
 
@@ -108,35 +110,8 @@ var newDiv = document.createElement('div');
 var parentToDiv = document.getElementsByClassName('ProjPic');
 parentToDiv[0].insertBefore(newDiv, parentToDiv[0].childNodes[0]);
 newDiv.style.height = textExplain[0].clientHeight + 'px';
-parentToDiv[0].style.paddingTop = '2.4rem';
+parentToDiv[0].style.paddingTop = '2rem';
 
-var textPosition = headingHeight.getBoundingClientRect();
-textBoxes[0].style.height = textPosition.height + 'px';
-//textBoxes[0].style.paddingTop = textBoxes[0].getBoundingClientRect().height/1.8 + 'px';
-
-
-/*var calculatedTop = 'calc(' + window.innerHeight/2 + 'px - ' + textPosition.top + 'px)';
-console.log(window.innerHeight);
-console.log(textPosition.height);
-console.log(textPosition.y);
-textBoxes[0].style.bottom = '50vh';
-//textBoxes[1].style.marginBottom = calculatedTop;
-console.log(calculatedTop);
-console.log(headingHeight);
-
-var textExplain = document.getElementsByClassName('explain');
-console.log('Else');
-var newDiv = document.createElement('div');
-
-var parentToDiv = document.getElementsByClassName('ProjPic');
-parentToDiv[0].insertBefore(newDiv, parentToDiv[0].childNodes[0]);
-console.log(imgHeight);
-var headingHeightCalc = 'calc(50vh - ' + headingHeight + 'px)';
-textBoxes[0].style.marginTop = headingHeightCalc; //adjusting heigt of the text about me
-var newDivHeight = 'calc(' + headingHeight + 'px + ' + textExplain[0].clientHeight + 'px)';
-console.log(newDivHeight);
-newDiv.style.height = newDivHeight;
-console.log(textExplain[0].clientHeight);*/
 
 }
 }
@@ -157,174 +132,80 @@ var btn3 = document.getElementById('modalBtn4');
 var btn4 = document.getElementById('modalBtn5');
 var btn5 = document.getElementById('modalBtn6');
 var modall = document.getElementsByClassName('modall');
-var endingModall = document.getElementsByClassName('close');
 
+//triggering all the modals - didn't know a better way to assemble this under one command, without triggering all the modals at the same time
 
 btn0.onclick = function() {
   modall[0].style.display = 'block';
 }
 
-
-document.onclick = function(event) {
-
-  if (event.target.id === 'modall') {
-    modall[0].style.display = 'none';
-    modall[1].style.display = 'none';
-    modall[2].style.display = 'none';
-    modall[3].style.display = 'none';
-    modall[4].style.display = 'none';
-    modall[5].style.display = 'none';
-  }
-}
-
-
 btn1.onclick = function() {
   modall[1].style.display = 'block';
-}
-
-endingModall[1].onclick = function() {
-  modall[1].style.display = 'none'
 }
 
 btn2.onclick = function() {
   modall[2].style.display = 'block';
 }
 
-endingModall[2].onclick = function() {
-  modall[2].style.display = 'none'
-}
-
 btn3.onclick = function() {
   modall[3].style.display = 'block';
-}
-
-endingModall[3].onclick = function() {
-  modall[3].style.display = 'none'
 }
 
 btn4.onclick = function() {
   modall[4].style.display = 'block';
 }
 
-endingModall[4].onclick = function() {
-  modall[4].style.display = 'none'
-}
-
 btn5.onclick = function() {
   modall[5].style.display = 'block';
 }
 
-endingModall[5].onclick = function() {
-  modall[5].style.display = 'none'
-}
 
-
-//Adjusting size of the icons for Contact by width-height ratio
-/*
-var icon = document.getElementsByClassName('social');
-var lastIcon = document.getElementById("LogoD");
-*/
-/*Changing icon size dependent on the screen size*/
-/*lastIcon.onload = function () {
-  for (i=0; i<icon.length; i++) {
-    var widTH = icon[i].width;
-    var heigHT = icon[i].height;
-    //console.log(screen.width);
-
-    if ((testScreen < '768') || (winWidth < '768')) {
-      if (heigHT>widTH) {
-        icon[i].style.height = '64px';
-        icon[i].style.width = 'auto';
-      } else {
-        icon[i].style.height = 'auto';
-        icon[i].style.width = '64px';
-      }
-    } else {
-      if (heigHT>widTH) {
-        icon[i].style.height = '96px';
-        icon[i].style.width = 'auto';
-      } else {
-        icon[i].style.height = 'auto';
-        icon[i].style.width = '96px';
-
-      }
-    }
-}
-}
-*/
-/*Positioning of nav meny*/
-/*var navTop = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().y;
-var navLeft = document.getElementsByClassName('nav-link')[1].getBoundingClientRect().x;
-var sideBar = document.getElementsByClassName('dropdown-content')[0];
-var winHeight = window.innerHeight;
-
-
-
-if ((screen.width < '768') && (winWidth > winHeight)) {
-  var calcWidth = 'calc(10vw - ' + navLeft+ 'px)';
-  sideBar.style.top = '-' + navTop + 'px';
-  sideBar.style.left = calcWidth;
-} else if ((screen.width < '768') && (winWidth < winHeight)) {
-  var calcWidth = 'calc(10vw - ' + navLeft+ 'px)';
-  sideBar.style.top = '-' + navTop/2 + 'px';
-  sideBar.style.left = calcWidth;
-} else {
-  var calcWidth = 'calc(-' + navTop + 'px - 10px)';
-
-  sideBar.style.top = calcWidth;
-}
-
-window.onclick = function(event) {
-    if (event.target.className === 'dropdown-content') {
-    sideBar.style.display = 'none';
-    }
+//Closing modals either on 'x' button or clicking outside modal
+document.onclick = function(event) {
+//  console.log(event.target);
+   if (event.target.id === 'modall' ||
+       event.target.id === 'close' ||
+       event.target.className === 'projtext' ||
+       event.target.className === 'abouticon' ||
+       event.target.className === 'navicon') {
+        // console.log("doing");
+     for (i=0; i<modall.length; i++) {
+      modall[i].style.display = 'none';
+     }
   }
-*/
+}
 
-/*Button for dropdown content - we'll have to add a class to button .dropdown-clicked*/
+
+
+/*Displaying and animating navbar objects for mobile/narrow/small displays*/
 var dropdownButton = document.getElementsByClassName('dropBtn');
 var dropContent = document.getElementsByClassName('dropupContent');
 var navLinks = document.getElementsByClassName('drpupLink');
 var touch = document.getElementsByClassName('KeepInTouch');
 
-
+function setDisplayNone (which) {
+  which.style.display = 'none';
+}
 
 function displaying() {
-  var disp = dropContent[0].style.display;
-  if (disp != "block") {
-      dropContent[0].style.display = 'block';
-    dropContent[0].classList.remove('dropdown-clicked');
-    for (i=0; i<navLinks.length; i++){
-      navLinks[i].style.display = 'block';
-      navLinks[i].classList.remove('dropdown-clicked');
-    }
-
+  if (dropContent[0].style.display != "block") {
+    dropContent[0].style.display = 'block';
+    dropContent[0].classList.add('rise');
   } else {
-    function setDisplayNone () {
-      dropContent[0].style.display = 'none';
-    }
-    dropContent[0].classList.add('dropdown-clicked');
-    setTimeout(setDisplayNone, 0);
-    }
+    dropContent[0].classList.remove('rise');
+    setDisplayNone(dropContent[0]);
+  }
 
 }
 
 function displaying1() {
-  var disp = dropContent[1].style.display;
-  if (disp != "inline-block") {
+  if (dropContent[1].style.display != "inline-block") {
     dropContent[1].style.display = 'inline-block';
-    dropContent[1].classList.remove('dropdown-clicked');
-      for (i=0; i<touch.length; i++){
-      touch[i].style.display = 'inline-block';
-      touch[i].classList.remove('dropdown-clicked');
-    }
+    dropContent[1].classList.add('rise');
 
   } else {
-    function setDisplayNone () {
-      dropContent[1].style.display = 'none';
-    }
-    dropContent[1].classList.add('dropdown-clicked');
-    setTimeout(setDisplayNone, 0);
+    setDisplayNone(dropContent[1]);
+    dropContent[1].classList.remove('rise');
   }
 
 }
