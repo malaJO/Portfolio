@@ -222,7 +222,7 @@ function displaying1() {
 
 document.onclick = function(event) {
 //console.log(event.target.className);
-console.log(event.target);
+//console.log(event.target);
  if (event.target.id === 'modall' ||
      event.target.id === 'close' ||
      event.target.className === 'projtext' ||
