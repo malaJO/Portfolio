@@ -34,8 +34,8 @@
 .close {
     float: right;
     font-size: 2rem;
-    font-weight: bold;
-color: #FFCE5F;
+    font-weight: 200;
+color: white;
     z-index: 5;
     height: 2rem;
 }
@@ -52,22 +52,48 @@ color: #FFCE5F;
 }
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#231F20' stroke-width='0.2' fill='#FFCE5F' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  width: 200px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#231F20' stroke-width='0.2' fill='#E5E5E5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#231F20' stroke-width='0.2' fill='#FFCE5F' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='#231F20' stroke-width='0.2' fill='#E5E5E5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 /*Styling modal Text content*/
-.modalText-w, .modalText {
-  color: #231F20;
-  background-color: rgba(255,206,95,0.95);
+.modalText {
+  color: #E5E5E5;
   min-height: 2.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0;
   text-align: center;
+}
 
+.modalText-w {
+  color: #334E5C;
+  /* #334E5C; */
+  min-height: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+/*Colour of the carousel indicators*/
+
+.carousel-indicators {
+  bottom: -10px;
+}
+
+/*Colour of the background of the carousel indicatior*/
+.carousel-indicators li {
+  background-color: #B2B2B2;
+}
+
+/*Colour of the active carousel indicatior*/
+.carousel-indicators .active {
+  background-color: white;
 }

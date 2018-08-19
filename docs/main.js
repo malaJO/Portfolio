@@ -160,20 +160,8 @@ btn5.onclick = function() {
 }
 
 
-//Closing modals either on 'x' button or clicking outside modal
-document.onclick = function(event) {
-//  console.log(event.target);
-   if (event.target.id === 'modall' ||
-       event.target.id === 'close' ||
-       event.target.className === 'projtext' ||
-       event.target.className === 'abouticon' ||
-       event.target.className === 'navicon') {
-        // console.log("doing");
-     for (i=0; i<modall.length; i++) {
-      modall[i].style.display = 'none';
-     }
-  }
-}
+//Closing modals either on 'x' button or clicking outside modal is done in the last function, checking for className = modal
+
 
 
 
@@ -189,6 +177,7 @@ function setDisplayNone (which) {
 }
 
 function displaying() {
+  if ((testScreen < '768') || (winWidth < '768')) {
   if (dropContent[0].style.display != "block") {
     dropContent[0].style.display = 'block';
     dropContent[0].classList.add('rise');
@@ -197,10 +186,12 @@ function displaying() {
     setDisplayNone(dropContent[0]);
 
   }
+}
 
 }
 
 function displaying1() {
+  if ((testScreen < '768') || (winWidth < '768')) {
   if (dropContent[1].style.display != "inline-block") {
     dropContent[1].style.display = 'inline-block';
     dropContent[1].classList.add('rise');
@@ -209,6 +200,7 @@ function displaying1() {
     setDisplayNone(dropContent[1]);
     dropContent[1].classList.remove('rise');
   }
+}
 }
 
 /*
@@ -229,7 +221,18 @@ function displaying1() {
 */
 
 document.onclick = function(event) {
-console.log(event.target.className);
+//console.log(event.target.className);
+console.log(event.target);
+ if (event.target.id === 'modall' ||
+     event.target.id === 'close' ||
+     event.target.className === 'projtext' ||
+     event.target.className === 'abouticon' ||
+     event.target.className === 'navicon') {
+      // console.log("doing");
+   for (i=0; i<modall.length; i++) {
+    modall[i].style.display = 'none';
+   }
+} else if ((testScreen < '768') || (winWidth < '768')) {
    if (event.target.className === 'projtext' ||
        event.target.className === 'projicon' ||
      event.target.className === 'mobileShow' && 'mobileText' ) {
@@ -237,6 +240,7 @@ console.log(event.target.className);
      setDisplayNone(dropContent[0]);
      //setDisplayNone(dropContent[1]);
   }
+}
 }
 
 dropdownButton[0].addEventListener('click', displaying);

@@ -101,11 +101,13 @@ margin-right: auto;
   width: 45vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: -1;
+  padding: 0.8rem 0.2rem;
+  border-radius: 0.1rem;
 }
 
-.ProjectsSec:hover .dropupContent {
+/* .ProjectsSec:hover .dropupContent {
   display: block;
-}
+} */
 
 .ProjectsSec:hover .nav-link {
   display: block;
@@ -131,7 +133,7 @@ margin-right: auto;
   position: absolute;
   bottom: 3rem;
   left: 0;
-  background-color: #f1f1f1;
+  background-color: #ffff;
   width: 100vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   /*z-index: 1;*/
@@ -139,25 +141,29 @@ margin-right: auto;
 
 .KeepInTouch {
   display: none;
-  width: 18%;
-  padding: 3% 5%;
+  width: 19%;
+  padding: 4% 4%;
+  position: relative;
 }
 
 .KeepInTouch img {
-  width: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
-.dropContact:hover .dropupContent {
+
+/* .dropContact:hover .dropupContent {
   display: block;
-}
+} */
 
 .dropContact:hover .KeepInTouch {
   display: inline-block;
 }
 
-.dropContact:hover .KeepInTouch img {
+/* .dropContact:hover .KeepInTouch img {
   width: 4rem;
-}
+} */
 
 
 /*Changing sizes for smaller screens*/
