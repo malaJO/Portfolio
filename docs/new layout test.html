@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>testing a dynamic layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="aminations.css">
+    <link rel="stylesheet" href="PLayout.css">
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="imagemodals.css">
+    <link rel="stylesheet" href="media.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:Light,Regular,Medium,Bold,Black" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:Regular,Bold" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:Light,Regular,Bold,Extra-Bold" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:Thin,Light,Regular" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
+
+
+    <link rel"shortcut icon" href="assets/flavicon/favicon-32x32.png" type="image/x-icon"><link rel="icon" href="assets/flavicon/favicon-32x32.png" type="image/x-icon">
+</head>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="2">
+
+<!--Navigation-->
+
+<!--Nav-link class is changing with active and inactive and is connected to the scrollspy, so nav-link has to stay in all that are relevant for scrollspy (decide if this should be only the main sections, or the projects as well)-->
+
+<nav class="navbar fixed-bottom" id="myScrollspy">
+
+      <ul class="row nav justify-content-center no-gutters">
+        <li class="nav-item">
+          <a href="#About" class="active nav-link">
+            <img class="abouticon" src="assets/svg/Navbar_icons/AboutIcon.svg" alt="Jovana's pictogram">
+          </a>
+          <a href="#About" class="mobileNav mobileShow">
+            <img class="mobileShow" src="assets/svg/Navbar_icons/AboutIcon_mobile.svg" alt="Jovana's pictogram">
+            <!--<p class="mobileShow mobileText">Jovana's home</p>-->
+          </a>
+          <div class="TextAbout col-12" href="#About">Jovana Pavić</div>
+          <div class="col-12 DescriptText" href="#About">DIGITAL DESIGNER</div>
+        </li>
+
+        <!--Projects-->
+        <div class="ProjectsSec nav-item">
+        <li class="mx-auto dropBtn">
+          <a class="mobileText mobileNav mobileShow" href="#Projects">
+              <img style="cursor: pointer" src="assets/svg/Navbar_icons/Projects_mobile.svg" alt="Project list pictogram">
+            <!--  <p class="mobileShow mobileText">Projects!</p>-->
+          </a>
+          <p class="TextNav">Projects</p>
+        </li>
+        <div class="dropupContent dropUpProjects">
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project1">
+            <img class="projicon" src="assets/svg/Navbar_icons/NescafeIcon.svg" alt="Nescafé Azera coffee tin">
+            <div class="projtext">Nescafé Azera tin</div>
+          </a>
+        </li>
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project2">
+            <img class="projicon" src="assets/svg/Navbar_icons/SkillshareIcon.svg" alt="New icon set for SkillShare">
+            <div class="projtext">Icon set for SkillShare</div>
+          </a>
+        </li>
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project3">
+            <img class="projicon" src="assets/svg/Navbar_icons/WalkingIcon.svg" alt="Walking strategy for Oslo">
+            <div class="projtext">Oslo walking strategy</div>
+          </a>
+        </li>
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project4">
+            <img class="projicon" src="assets/svg/Navbar_icons/DominoIcon.svg" alt="Dom-ino house (Le Corbusier) in perpetual recurrence">
+            <div class="projtext">Dom-ino house</div>
+          </a>
+        </li>
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project5">
+            <img class="projicon" src="assets/svg/Navbar_icons/BDentIcon.svg" alt="Web & graphic design B-dent">
+            <div class="projtext">B-dent dentistry</div>
+          </a>
+        </li>
+        <li class="col-12">
+          <a class="nav-link drpupLink" href="#Project6">
+            <img class="projicon" src="assets/svg/Navbar_icons/GreenStreetIcon.svg" alt="Green street">
+            <div class="projtext">Green street</div>
+          </a>
+        </li>
+      </div>
+    </div>
+
+        </li>
+        <li class="nav-item dropBtn dropContact">
+          <a class="mobileNav mobileShow">
+            <img class="mobileShow"src="assets/svg/Navbar_icons/Contact_mobile.svg" alt="Contact me">
+            <!--<p class="mobileShow mobileText">Contact me</p>-->
+          </a>
+          <div class="TextNav ContactSec dropupContent">
+
+            <a class="KeepInTouch" href="mailto:jovana.pavic@gmail.com?subject=Message for the spider weber"><img class="navicon" src="assets/svg/Navbar_icons/Email.svg" alt="Send an email"></a>
+            <a class="KeepInTouch" href="tel:+4794423967"><img class="navicon" src="assets/svg/Navbar_icons/Call.svg" alt="Give Jovana a call"></a>
+            <a class="KeepInTouch" href="https://github.com/malaJO" target="_blank"><img class="navicon" src="assets/svg/Navbar_icons/Github.svg" alt="Check out her GitHub account"></a>
+            <a class="KeepInTouch" href="https://www.interaction-design.org/jovana-pavic" target="_blank"><img class="navicon" src="assets/png/Navbar_icons/Idf.png" alt="Check out the courses she takes on IDF"></a>
+            <a class="KeepInTouch" href="https://trydesignlab.com/certificates/design-101-v1/malaJ0/" target="_blank"><img class="navicon" src="assets/png/Navbar_icons/Designlab.png" alt="Check out her courses on Designlab"></a>
+          </div>
+        </li>
+
+      </ul>
+      <!--</div>-->
+    </nav>
+
+<div class="container">
+  <div class="row row1 align-items-center h-100 justify-content-around">
+
+      <!-- <div class="col-sm-12 col-md-4 boxes">BOX 1
+      </div>
+      <div class="col-sm-12 col-md-4  boxes">BOX 2
+
+   </div>
+    <div class="col-sm-12 col-md-2  boxes">BOX 3
+
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 4
+    </div>
+    <div class="col-sm-12 col-md-8  boxes">
+      <div class="col-md-4 boxes">neki deo</div>
+      <div class="col-md-4 boxes">jos nesto</div>
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 6
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 7
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 8
+    </div>
+    <div class="col-sm-12 col-md-12  boxes">BOX 9
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 10
+    </div>
+    <div class="col-sm-12 col-md-2  boxes">BOX 11
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 12
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 13
+    </div>
+    <div class="col-sm-12 col-md-8 boxes">BOX 14
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 15
+    </div>
+    <div class="col-sm-12 col-md-2  boxes">BOX 16
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 17
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 18
+    </div>
+    <div class="col-sm-12 col-md-8 boxes">BOX 19
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 20
+    </div>
+    <div class="col-sm-12 col-md-4 boxes">BOX 21
+    </div>
+    <div class="col-sm-12 col-md-4  boxes">BOX 22
+
+ </div> -->
+  <div class="col-sm-12 col-md-8  boxes">
+    <img class="rot" src="assets/jpg/Buzzing_with_Tin.jpg" alt="Nescafe tin with illustration applied and with illustration as a background">
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <p>Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied. Nescafe Azera tin with illustration applied.
+    </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <img class="rot" src="assets/jpg/Buzzing-with-brand.jpg" alt="Unwrapped tin with the illustration and brand design applied">
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <p>Unwrapped tin with the illustration and brand design applied</p>
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+   <img class="rot" src="assets/jpg/Vastness-with-Tin.jpg" alt="Nescafe tin with the second illustration applied and with illustration as a background">
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <p>The second entry to the competition, not chosen by the jury.</p>
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <img class="rot" src="assets/svg/Oslo-modal-split.svg" alt="Modal split in Oslo city">
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <h6>Percentage of daily trips by transport mode.<br>
+    Different colour pallettes were explored before the client went for the greens.</h6>
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <h6>Persentage of trips lasting for 5, 10, 20, 30 minutes and more. For the entire city (to the left) and each part of the city separately.</h6>
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <img class="rot" src="assets/svg/Oslo-time.svg" alt="Share of the trips lasting for predefined amount of time">
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <img class="rot" src="assets/svg/Oslo-walkability.svg" alt="Increased walkability benefits the society">
+  </div>
+  <div class="col-sm-12 col-rand boxes">
+    <h6><b>General Theory of Walkabilitys’ conditions for increasing walkability:</b><br>
+    simple, useful, safe, comfortable and interesting - blossoming into the benefits of increased walkability to the society - social, environmental, health and economic benefits.</h6>
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <h6><b>The main issue identified by using problemtree technique - walking is not on the political agenda.</b><br>
+    The identified core problem in the middle, which should be addressed in order to solve the root problems.</h6>
+  </div>
+  <div class="col-sm-12 col-md-8  boxes">
+    <img class="rot" src="assets/jpg/Oslo-problemtree.jpg" alt="Increased walkability benefits the society">
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <img class="rot" src="assets/png/Walking-strategy-pages.png" alt="Increased walkability benefits the society">
+  </div>
+  <div class="col-sm-12 col-rand  boxes">
+    <h6>Pages from the Walking Strategy report<br>
+    The identified core problem in the middle, which should be addressed in order to solve the root problems.</h6>
+
+  </div>
+  <!-- <div class="col-sm-12 col-md-8 boxes">BOX 39
+  </div>
+  <div class="col-sm-12 col-md-4  boxes">BOX 40
+  </div>
+  </div> -->
+
+</div>
+
+
+<!-- <img class="modalPic d-block w-100"
+  srcset = "assets/jpg/Buzzing_with_Tin_S.jpg 800w,
+          assets/jpg/Buzzing_with_Tin.jpg 2500w"
+  sizes = "(max-width: 768px) 100vw,
+          100vw"
+  src="assets/jpg/Buzzing_with_Tin.jpg" alt="Nescafe tin with illustration applied and with illustration as a background">
+<div class="modalText">
+  <h6>Nescafe Azera tin with illustration applied</h6>
+</div>
+</div>
+<div class="carousel-item">
+<img class="d-block w-100 modalPic"
+     srcset = "assets/jpg/Buzzing-with-brand_S.jpg 1359w,
+              assets/jpg/Buzzing-with-brand.jpg 2717w"
+     sizes = "(max-width: 768px) 100vw,
+            100vw"
+     src="assets/jpg/Buzzing-with-brand.jpg"
+     alt="Unwrapped tin with the illustration and brand design applied">
+<div class="modalText">
+<h6>Unwrapped tin with the illustration and brand design applied</h6>
+</div>
+</div>
+<div class="carousel-item">
+<img class="d-block w-100 modalPic"
+     srcset = "assets/jpg/Vastness-with-Tin_S.jpg 1354w,
+               assets/jpg/Vastness-with-Tin.jpg 2708w"
+     sizes = "(max-width: 768px) 100vw,
+          100vw"
+     src="assets/jpg/Vastness-with-Tin.jpg" alt="Nescafe tin with the second illustration applied and with illustration as a background">
+<div class="modalText">
+  <h6>The second entry to the competition, not chosen by the jury.</h6>
+</div>
+</div>
+
+
+<div class="carousel-item active">
+  <img class="modalPic d-block w-100" src="assets/svg/Oslo-modal-split.svg" alt="Modal split in Oslo city">
+  <div class="modalText-w">
+    <h6>Percentage of daily trips by transport mode.<br>
+    Different colour pallettes were explored before the client went for the greens.</h6>
+  </div>
+</div>
+<div class="carousel-item">
+  <img class="d-block w-100 modalPic" src="assets/svg/Oslo-time.svg" alt="Share of the trips lasting for predefined amount of time">
+  <div class="modalText-w">
+    <h6>Persentage of trips lasting for 5, 10, 20, 30 minutes and more. For the entire city (to the left) and each part of the city separately.</h6>
+  </div>
+</div>
+<div class="carousel-item">
+  <img class="modalPic d-block w-100" src="assets/svg/Oslo-walkability.svg" alt="Increased walkability benefits the society">
+  <div class="modalText-w">
+    <h6><b>General Theory of Walkabilitys’ conditions for increasing walkability:</b><br>
+    simple, useful, safe, comfortable and interesting - blossoming into the benefits of increased walkability to the society - social, environmental, health and economic benefits.</h6>
+  </div>
+</div>
+<div class="carousel-item">
+  <img class="modalPic d-block w-100"
+       srcset = "assets/jpg/Oslo-problemtree_S.jpg 2516w,
+                 assets/jpg/Oslo-problemtree.jpg 5032w"
+       sizes = "(max-width: 768px) 100vw,
+                100vw"
+       src="assets/jpg/Oslo-problemtree.jpg" alt="Problem tree for walkability in Oslo">
+  <div class="modalText-w">
+    <h6><b>The main issue identified by using problemtree technique - walking is not on the political agenda.</b><br>
+    The identified core problem in the middle, which should be addressed in order to solve the root problems.</h6>
+  </div>
+</div>
+<div class="carousel-item">
+  <img class="modalPic d-block w-100"
+       srcset = "assets/png/Walking-strategy-pages_S.png 2481w,
+                 assets/png/Walking-strategy-pages.png 4961w"
+       sizes = "(max-width: 768px) 100vw,
+                100vw"
+       src="assets/png/Walking-strategy-pages.png" alt="Pages from the report">
+  <div class="modalText-w">
+    <h6>Pages from the Walking Strategy report<br>
+    The identified core problem in the middle, which should be addressed in order to solve the root problems.</h6>
+  </div>
+</div>
+
+ -->
+
+
+
+
+<script src="main_NLayout.js"></script>
+
+</body> <!--Closing body tag-->
+
+
+
+</html>
