@@ -21,10 +21,6 @@
 
 /*not showing in mobile version*/
 
-.ContactSec {
-  display: none;
-}
-
 .DescriptText {
   display: none;
 }
@@ -37,10 +33,13 @@
   display: none;
 }
 
-.nav-link {
+/* .nav-link {
     display: none;
-}
+} */
 
+.abouticon {
+  display: none;
+}
 
 /*Showing only in mobile version*/
 
@@ -66,12 +65,13 @@ margin-right: auto;
 }
 
 .mobileNav img {
-  width: 2.8rem;
+  height: 1.8rem;
 }
 
 .nav {
   width: 100vw;
-  height: 3rem;
+  height: 1.8rem;
+  box-shadow: 0.1rem 0.1rem 0.6rem -0.05rem #334E5C;
 }
 
 .navicon {
@@ -94,14 +94,15 @@ margin-right: auto;
 
 .dropUpProjects {
   display: none;
-  position: absolute;
-  bottom: 3rem;
-  left: -15vw;
-  background-color: #f1f1f1;
-  width: 45vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,0.95);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: -1;
-  padding: 0.8rem 0.2rem;
+  z-index: -10;
+  padding: 6rem 0.2rem;
   border-radius: 0.1rem;
 }
 
@@ -109,19 +110,19 @@ margin-right: auto;
   display: block;
 } */
 
-.ProjectsSec:hover .nav-link {
+/* .ProjectsSec:hover .nav-link {
   display: block;
   padding: 0.2rem 1rem;
-}
+} */
 
-.nav-link:hover {
+/* .nav-link:hover {
   background-color: white;
 }
 
 .ProjectsSec:hover .nav-link {
   display: block;
   padding: 0.2rem 1rem;
-}
+} */
 
 
 .Sky {
@@ -131,25 +132,39 @@ margin-right: auto;
 .ContactSec {
   display: none;
   position: absolute;
-  bottom: 3rem;
+  bottom: 1.2rem;
   left: 0;
   background-color: #ffff;
-  width: 100vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  /*z-index: 1;*/
+  z-index: -1;
+  width: 100vw;
 }
 
+
 .KeepInTouch {
-  display: none;
-  width: 19%;
-  padding: 4% 4%;
+  width: 18.4%;
   position: relative;
 }
 
 .KeepInTouch img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+
+  padding: 16px 0;
+}
+
+.drpupLink {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18rem;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #334E5C;
+}
+
+.dropBtn {
+  cursor: pointer;
 }
 
 
@@ -157,9 +172,9 @@ margin-right: auto;
   display: block;
 } */
 
-.dropContact:hover .KeepInTouch {
+/* .dropContact:hover .KeepInTouch {
   display: inline-block;
-}
+} */
 
 /* .dropContact:hover .KeepInTouch img {
   width: 4rem;
@@ -243,26 +258,16 @@ h2::first-letter {
     width: 2rem;
   }
 
-  .dropUpProjects {
+  /* .dropUpProjects {
     width: 80vw;
     left: -30vw;
-  }
+  } */
 
-  .ContactSec {
-    width: 100vw;
-  }
-
-  .KeepInTouch {
-    width: 16%;
-  }
 
   .KeepInTouch img {
     width: 3.2rem;
   }
 
-  .dropContact:hover .KeepInTouch img {
-    width: 3.2rem;
-  }
 
   .mobileText {
     font-size: 0.8rem;

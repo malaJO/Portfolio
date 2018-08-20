@@ -221,24 +221,28 @@ function displaying1() {
 */
 
 document.onclick = function(event) {
-//console.log(event.target.className);
-//console.log(event.target);
+  // console.log(event.target.className);
+// console.log(event.target);
+//Closing modals
  if (event.target.id === 'modall' ||
      event.target.id === 'close' ||
-     event.target.className === 'projtext' ||
      event.target.className === 'abouticon' ||
      event.target.className === 'navicon') {
       // console.log("doing");
    for (i=0; i<modall.length; i++) {
     modall[i].style.display = 'none';
    }
+   //Closing navbar items
 } else if ((testScreen < '768') || (winWidth < '768')) {
    if (event.target.className === 'projtext' ||
        event.target.className === 'projicon' ||
-     event.target.className === 'mobileShow' && 'mobileText' ) {
+       event.target.className === 'mobileShow') {
 
      setDisplayNone(dropContent[0]);
      //setDisplayNone(dropContent[1]);
+     for (i=0; i<modall.length; i++) {
+      modall[i].style.display = 'none';
+     }
   }
 }
 }
